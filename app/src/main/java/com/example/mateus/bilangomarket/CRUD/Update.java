@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.mateus.bilangomarket.Usuario;
 
+import java.sql.PreparedStatement;
+
 public class Update extends SQLiteOpenHelper {
 
     private static final String NOME_DB = "BANCO";
@@ -40,7 +42,7 @@ public class Update extends SQLiteOpenHelper {
         openDB();
         try{
             /*Pegando os dados do usuario informado como parametro e inserindo no banco de dados*/
-            ContentValues cv = new ContentValues();
+            ContentValues cv = new ContentValues();   /*ContentValues é um tipo de variavel em que voce armazena os valores para depois inserilos no banco de dados*/
             cv.put("NOME",   u.getNome());
             cv.put("EMAIL",  u.getEmail());
             cv.put("SENHA",  u.getSenha());
@@ -80,13 +82,10 @@ public class Update extends SQLiteOpenHelper {
 
 
 
+
     private void openDB(){
         if(!db.isOpen()){
             db = mContext.openOrCreateDatabase(PATH_DB, SQLiteDatabase.OPEN_READWRITE, null);
-
         }
-
     }
-
-
 }

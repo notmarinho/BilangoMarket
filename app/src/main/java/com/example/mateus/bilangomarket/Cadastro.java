@@ -14,6 +14,7 @@ import com.example.mateus.bilangomarket.CRUD.Delete;
 import com.example.mateus.bilangomarket.CRUD.Read;
 import com.example.mateus.bilangomarket.CRUD.Update;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class Cadastro extends AppCompatActivity {
@@ -42,7 +43,6 @@ public class Cadastro extends AppCompatActivity {
         u.setNome(edt_nome.getText().toString());
         u.setEmail(edt_email.getText().toString());
         u.setSenha(edt_senha.getText().toString());
-
         Update update = new Update(getApplicationContext());
         if(update.inserirUsuario(u)){
             Toast.makeText(this, "Usuario inserido com sucesso", Toast.LENGTH_SHORT).show();
@@ -121,7 +121,10 @@ public class Cadastro extends AppCompatActivity {
                 }else
                     if(res = !senha.equals(confSenha)){
                         edt_confSenha.requestFocus();
-                    }
+                    }else
+                        if(res = senha.length() < 5 || senha.length() > 15){
+                            edt_senha.requestFocus();
+                        }
         if (res){
             AlertDialog.Builder dlg = new AlertDialog.Builder(this);
             dlg.setTitle("Aviso");
@@ -142,5 +145,7 @@ public class Cadastro extends AppCompatActivity {
         boolean resultado = (TextUtils.isEmpty(valor) || valor.trim().isEmpty());  /* Verificando se o campo esta vazio*/
         return resultado;
     }
+
+
 
 }

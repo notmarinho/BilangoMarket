@@ -68,6 +68,8 @@ public class Read extends SQLiteOpenHelper {
 
 
 
+
+
     private void openDB(){
         if(!db.isOpen()){
             db = mContext.openOrCreateDatabase(PATH_DB, SQLiteDatabase.OPEN_READWRITE, null);

@@ -17,4 +17,8 @@ public class MainActivity extends AppCompatActivity {
         Intent it = new Intent(this, Cadastro.class);
         startActivity(it);
     }
+    public void act_login(View v){
+        Intent it = new Intent(this, LoginActivity.class);
+        startActivity(it);
+    }
 }
