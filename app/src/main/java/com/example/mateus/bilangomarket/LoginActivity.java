@@ -217,7 +217,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             AlertDialog.Builder dlg = new AlertDialog.Builder(this);
-            Toast.makeText(this, "Seja vem vindo " + u.getNome(), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Seja bem-vindo " + u.getNome(), Toast.LENGTH_LONG).show();
             showProgress(true);
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);

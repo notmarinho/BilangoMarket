@@ -1,5 +1,6 @@
 package com.example.mateus.bilangomarket;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -88,19 +89,6 @@ public class Cadastro extends AppCompatActivity {
         deletar.deleteTable();
     }
 
-    public void lerTabela(View v){
-
-        Read r = new Read(getApplicationContext());
-        ArrayList<Usuario> uArray = r.getUsuario();
-
-        for (int i = 0; i < uArray.size() ; i++) {
-            Usuario u = uArray.get(i);
-            System.out.println("NOME: " + u.getNome() +
-                    " \nEMAIL: " + u.getEmail() +
-                    " \nSENHA: " + u.getSenha() +
-                    " \nSTATUS: " + u.getAtivo());
-        }
-    }
 
     public void validarCampos(View v){   /*   ESTA FUNÇAO ESTA ATRIBUIDA AO BOTAO CADASTRAR ( POR ENQUANTO ) */
         boolean res = false;
@@ -133,6 +121,7 @@ public class Cadastro extends AppCompatActivity {
             dlg.show();
         }else{
             cadastrar();
+            finish();
         }
     }
 
@@ -145,7 +134,4 @@ public class Cadastro extends AppCompatActivity {
         boolean resultado = (TextUtils.isEmpty(valor) || valor.trim().isEmpty());  /* Verificando se o campo esta vazio*/
         return resultado;
     }
-
-
-
 }

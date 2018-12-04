@@ -21,4 +21,8 @@ public class MainActivity extends AppCompatActivity {
         Intent it = new Intent(this, LoginActivity.class);
         startActivity(it);
     }
+    public void act_listaUsuarios(View v){
+        Intent it = new Intent(this, ListaUsuarios.class);
+        startActivity(it);
+    }
 }
