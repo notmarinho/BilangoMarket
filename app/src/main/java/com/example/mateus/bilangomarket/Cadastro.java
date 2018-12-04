@@ -1,5 +1,6 @@
 package com.example.mateus.bilangomarket;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -133,6 +134,9 @@ public class Cadastro extends AppCompatActivity {
             dlg.show();
         }else{
             cadastrar();
+            finish();
+
+
         }
     }
 
@@ -145,7 +149,8 @@ public class Cadastro extends AppCompatActivity {
         boolean resultado = (TextUtils.isEmpty(valor) || valor.trim().isEmpty());  /* Verificando se o campo esta vazio*/
         return resultado;
     }
-
-
-
+    public void chamarMenuPrincipal(){
+        Intent it = new Intent(this, LoginActivity.class);
+        startActivity(it);
+    }
 }
