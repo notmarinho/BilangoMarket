@@ -31,11 +31,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.mateus.bilangomarket.CRUD.Read;
+import com.example.mateus.bilangomarket.DATA.UsuarioDAO;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -144,15 +143,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     public Usuario isUsuarioInserido() {
         Usuario resultado = null;
-        Read r = new Read(getApplicationContext());
-        ArrayList<Usuario> uArray = r.getUsuario();
+        UsuarioDAO r = new UsuarioDAO(getApplicationContext());
+        ArrayList<Usuario> uArray = r.getTodosUsuarios();
         String email = mEmailView.getText().toString();
         String senha = mPasswordView.getText().toString();
 
         for (int i = 0; i < uArray.size(); i++) {
             Usuario u = uArray.get(i);
             if (u.getEmail().equals(email) && u.getSenha().equals(senha)) {
-                if (u.getAtivo().equals("1")){
+                if (u.getAtivo() == 1){
                     resultado = u;
                     break;
                 }
@@ -305,7 +304,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
 
     private void addEmailsToAutoComplete(List<String> emailAddressCollection) {
-        //Create adapter to tell the AutoCompleteTextView what to show in its dropdown list.
+
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<>(LoginActivity.this,
                         android.R.layout.simple_dropdown_item_1line, emailAddressCollection);

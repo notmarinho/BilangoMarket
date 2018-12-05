@@ -1,16 +1,26 @@
 package com.example.mateus.bilangomarket;
 
 public class Usuario {
-    String nome;
-    String email;
-    String senha;
-    String ativo = "1";
+    private String nome;
+    private String email;
+    private String senha;
+    private int ativo = 1;
+    private long ID;
 
-    public String getAtivo() {
+
+    public int getID() {
+        return (int) ID;
+    }
+
+    public void setID(long ID) {
+        this.ID = ID;
+    }
+
+    public int getAtivo() {
         return ativo;
     }
 
-    public void setAtivo(String ativo) {
+    public void setAtivo(int ativo) {
         this.ativo = ativo;
     }
 
