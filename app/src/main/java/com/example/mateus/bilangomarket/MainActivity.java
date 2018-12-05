@@ -4,6 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
+
+import com.example.mateus.bilangomarket.CRUD.Read;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
     }
     public void act_listaUsuarios(View v){
         Intent it = new Intent(this, ListaUsuarios.class);
-        startActivity(it);
+        Read r = new Read(getApplicationContext());
+        ArrayList<Usuario> uArray = r.getUsuario();
+        if (uArray == null){
+            Toast.makeText(this, "Não há usuários cadastrados.", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            System.out.println("Entrou no ELSE");
+            startActivity(it);}
     }
 }
