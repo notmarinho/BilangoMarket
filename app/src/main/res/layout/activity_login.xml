@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -12,6 +13,13 @@
     tools:context=".LoginActivity">
 
     <!-- Login progress -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="@color/colorAccent2" />
+
     <ProgressBar
         android:id="@+id/login_progress"
         style="?android:attr/progressBarStyleLarge"
@@ -23,7 +31,8 @@
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:id="@+id/email_login_form"
@@ -37,14 +46,27 @@
 
                 <AutoCompleteTextView
                     android:id="@+id/email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="322dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="monospace"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    android:visibility="visible" />
 
             </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Senha:"
+                android:textColor="@color/colorAccent2" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -60,19 +82,24 @@
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent2"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
 
             </android.support.design.widget.TextInputLayout>
 
             <Button
                 android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_marginTop="16dp"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="@string/action_sign_in"
+                android:textColor="@color/colorAccent2"
                 android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

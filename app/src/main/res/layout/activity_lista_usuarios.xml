@@ -5,7 +5,9 @@
     android:id="@+id/listView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     tools:context=".ListaUsuarios">
+
 
     <ListView
         android:id="@+id/listaUsuarios"
@@ -27,8 +29,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTintMode="src_over"
         android:onClick="fecharAct"
         android:text="Sair"
+        android:textColor="@color/colorAccent2"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +50,7 @@
         android:layout_marginBottom="2dp"
         android:text="Lista de Usuarios Cadastrados"
         android:textAllCaps="false"
+        android:textColor="@color/colorAccent2"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/listaUsuarios"
         app:layout_constraintEnd_toEndOf="parent"
