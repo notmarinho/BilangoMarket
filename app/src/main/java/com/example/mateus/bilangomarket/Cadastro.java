@@ -1,5 +1,6 @@
 package com.example.mateus.bilangomarket;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -66,31 +67,34 @@ public class Cadastro extends AppCompatActivity {
         String confSenha  = edt_confSenha.getText().toString();
 
         if (res = isCampoVazio(nome)){
+            Toast.makeText(this, "Por favor, informe seu nome", Toast.LENGTH_LONG).show();
             edt_nome.requestFocus();
         }
         else
             if(res = !isEmailValido(email)){
+                Toast.makeText(this, "E-mail inválido", Toast.LENGTH_LONG).show();
                 edt_email.requestFocus();
             }else
                 if(res = isCampoVazio(senha)){
+                    Toast.makeText(this, "Por favor, informe uma senha", Toast.LENGTH_LONG).show();
                     edt_senha.requestFocus();
                 }else
                     if(res = !senha.equals(confSenha)){
+                        Toast.makeText(this, "As senhas não são iguais", Toast.LENGTH_LONG).show();
                         edt_confSenha.requestFocus();
                     }else
                         if(res = senha.length() < 5 || senha.length() > 15){
+                            Toast.makeText(this, "Sua tem que ter entre 5 a 15 caractéres", Toast.LENGTH_LONG).show();
                             edt_senha.requestFocus();
                         }
-        if (res){
-            AlertDialog.Builder dlg = new AlertDialog.Builder(this);
-            dlg.setTitle("Aviso");
-            dlg.setMessage("Há campos inválidos ou em branco");
-            dlg.setNeutralButton("Ok", null);
-            dlg.show();
-        }else{
+        if (!res){
             cadastrar();
             finish();
         }
+    }
+
+    public void fechar_act(View v){
+        finish();
     }
 
     private boolean isEmailValido(String email){
