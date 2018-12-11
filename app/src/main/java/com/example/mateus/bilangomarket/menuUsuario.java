@@ -8,20 +8,25 @@ import android.widget.TextView;
 
 
 public class menuUsuario extends AppCompatActivity {
-    TextView nome_usuario;
-
+    TextView text_usuarioNome;
+    String usuario_nome;
+    String usuario_email;
+    String usuario_senha;
+    long usuario_ID;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_usuario);
-        nome_usuario = (TextView)findViewById(R.id.txt_nomeUsuario);
+        text_usuarioNome = (TextView)findViewById(R.id.txt_nomeUsuario);
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
-            String usuario_nome = bundle.getString("usuario_nome");
-            String usuario_email = bundle.getString("usuario_email");
-            nome_usuario.setText(usuario_nome);
+            usuario_nome = bundle.getString("usuario_nome");
+            usuario_email = bundle.getString("usuario_email");
+            usuario_senha = bundle.getString("usuario_senha");
+            usuario_ID = bundle.getLong("usuario_ID");
+            text_usuarioNome.setText(usuario_nome);
         }
 
     }
@@ -39,6 +44,15 @@ public void act_deslogar(View v){
     }
 public void act_cadastrarAnuncio(View v){
         Intent it = new Intent(this, CadastrarAnuncio.class);
+        startActivity(it);
+}
+
+public void act_deletarUsuario(View v){
+        Intent it = new Intent(this, DeletarUsuario.class);
+        it.putExtra("usuario_nome", usuario_nome);
+        it.putExtra("usuario_email", usuario_email);
+        it.putExtra("usuario_senha", usuario_senha);
+        it.putExtra("usuario_ID", usuario_ID);
         startActivity(it);
 }
 }

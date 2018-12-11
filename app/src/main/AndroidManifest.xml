@@ -27,7 +27,8 @@
             android:label="@string/title_activity_login" />
         <activity android:name=".ListaUsuarios" />
         <activity android:name=".menuUsuario" />
-        <activity android:name=".CadastrarAnuncio"></activity>
+        <activity android:name=".CadastrarAnuncio" />
+        <activity android:name=".DeletarUsuario"></activity>
     </application>
 
 </manifest>
