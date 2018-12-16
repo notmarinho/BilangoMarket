@@ -142,5 +142,41 @@ public class UsuarioDAO {
         }
     }
 
+    public boolean editarSenha(String email, String novaSenha){
+        AjudanteBD ajudante = new AjudanteBD(contexto);
+        SQLiteDatabase db = ajudante.getReadableDatabase();
+
+        try {
+            String where = "EMAIL = '" + email + "'";
+            ContentValues cv = new ContentValues();
+            cv.put(ContratoUsuario.COLUNA_SENHA, novaSenha);
+            db.update(ContratoUsuario.NOME_TABELA, cv, where, null);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }finally {
+            db.close();
+        }
+    }
+
+    public boolean editarNomeUsuario(String email, String nomeUsuario){
+        AjudanteBD ajudante = new AjudanteBD(contexto);
+        SQLiteDatabase db = ajudante.getReadableDatabase();
+
+        try {
+            String where = "EMAIL = '" + email + "'";
+            ContentValues cv = new ContentValues();
+            cv.put(ContratoUsuario.COLUNA_NOME, nomeUsuario);
+            db.update(ContratoUsuario.NOME_TABELA, cv, where, null);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }finally {
+            db.close();
+        }
+    }
+
 
 }
