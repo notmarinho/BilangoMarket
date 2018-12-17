@@ -50,7 +50,7 @@ public class Cadastro extends AppCompatActivity {
 
         UsuarioDAO delete = new UsuarioDAO(getApplicationContext());
 
-        if(delete.desativarUsuario(u)){
+        if(delete.desativarUsuario(u.getEmail())){
             Toast.makeText(this, "Usuario deletado com sucesso", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(this, "Usuario nao encontrado", Toast.LENGTH_SHORT).show();
@@ -60,34 +60,39 @@ public class Cadastro extends AppCompatActivity {
 
 
     public void validarCampos(View v){   /*   ESTA FUNÇAO ESTA ATRIBUIDA AO BOTAO CADASTRAR ( POR ENQUANTO ) */
-        boolean res = false;
+        boolean erro = false;
         String nome       = edt_nome.getText().toString();
         String email      = edt_email.getText().toString();
         String senha      = edt_senha.getText().toString();
         String confSenha  = edt_confSenha.getText().toString();
+        UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
 
-        if (res = isCampoVazio(nome)){
+        if (erro = isCampoVazio(nome)){
             Toast.makeText(this, "Por favor, informe seu nome", Toast.LENGTH_LONG).show();
             edt_nome.requestFocus();
         }
         else
-            if(res = !isEmailValido(email)){
+            if(erro = !isEmailValido(email)){
                 Toast.makeText(this, "E-mail inválido", Toast.LENGTH_LONG).show();
                 edt_email.requestFocus();
             }else
-                if(res = isCampoVazio(senha)){
+                if(erro = isCampoVazio(senha)){
                     Toast.makeText(this, "Por favor, informe uma senha", Toast.LENGTH_LONG).show();
                     edt_senha.requestFocus();
                 }else
-                    if(res = !senha.equals(confSenha)){
+                    if(erro = !senha.equals(confSenha)){
                         Toast.makeText(this, "As senhas não são iguais", Toast.LENGTH_LONG).show();
                         edt_confSenha.requestFocus();
                     }else
-                        if(res = senha.length() < 5 || senha.length() > 15){
+                        if(erro = senha.length() < 5 || senha.length() > 15){
                             Toast.makeText(this, "Sua tem que ter entre 5 a 15 caractéres", Toast.LENGTH_LONG).show();
                             edt_senha.requestFocus();
-                        }
-        if (!res){
+                        }else
+                            if (erro = isUsuarioInserido(email)){
+                                Toast.makeText(this, "Email ja inserido", Toast.LENGTH_SHORT).show();
+                                edt_email.requestFocus();
+                            }
+        if (!erro){
             cadastrar();
             finish();
         }
@@ -105,5 +110,13 @@ public class Cadastro extends AppCompatActivity {
     private boolean isCampoVazio(String valor){
         boolean resultado = (TextUtils.isEmpty(valor) || valor.trim().isEmpty());  /* Verificando se o campo esta vazio*/
         return resultado;
+    }
+
+    private boolean isUsuarioInserido(String email){
+        UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
+        Usuario usuario = usuarioDAO.getUsuarioEmail(email);
+        if (usuario != null){
+            return true;
+        }else return false;
     }
 }

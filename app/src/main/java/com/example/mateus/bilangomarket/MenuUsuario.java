@@ -6,13 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.mateus.bilangomarket.DATA.UsuarioDAO;
+
 
 public class MenuUsuario extends AppCompatActivity {
     TextView text_usuarioNome;
-    String usuario_nome;
     String usuario_email;
-    String usuario_senha;
-    long usuario_ID;
+    Usuario usuario;
 
 
     @Override
@@ -22,13 +22,12 @@ public class MenuUsuario extends AppCompatActivity {
         text_usuarioNome = (TextView)findViewById(R.id.txt_nomeUsuario);
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
-            usuario_nome = bundle.getString("usuario_nome");
             usuario_email = bundle.getString("usuario_email");
-            usuario_senha = bundle.getString("usuario_senha");
-            usuario_ID = bundle.getLong("usuario_ID");
-            text_usuarioNome.setText(usuario_nome);
         }
 
+        UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
+        usuario = usuarioDAO.getUsuarioEmail(usuario_email);
+        text_usuarioNome.setText(usuario.getNome());
     }
 
 public void act_listaUsuarios(View v){
@@ -46,23 +45,12 @@ public void act_cadastrarAnuncio(View v){
         startActivity(it);
 }
 
-/*public void act_deletarUsuario(View v){
-        Intent it = new Intent(this, DeletarUsuario.class);
-        it.putExtra("usuario_nome", usuario_nome);
-        it.putExtra("usuario_email", usuario_email);
-        it.putExtra("usuario_senha", usuario_senha);
-        it.putExtra("usuario_ID", usuario_ID);
-        startActivity(it);
-
-        EM COMENTARIO PORQUE A ACT DE DELETAR USUARIO SUMIU, E EU NAO SEI COMO
-}*/
-
 public void act_menuEditarUsuario(View view){
         Intent it = new Intent(this, MenuEditarUsuario.class);
-        it.putExtra("usuario_nome", usuario_nome);
-        it.putExtra("usuario_email", usuario_email);
-        it.putExtra("usuario_senha", usuario_senha);
-        it.putExtra("usuario_ID", usuario_ID);
+        it.putExtra("usuario_nome",  usuario.getNome());
+        it.putExtra("usuario_email", usuario.getEmail());
+        it.putExtra("usuario_senha", usuario.getSenha());
+        it.putExtra("usuario_ID",    usuario.getID());
         startActivity(it);
 }
 }

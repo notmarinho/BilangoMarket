@@ -29,11 +29,22 @@ public class MenuEditarUsuario extends AppCompatActivity {
         it.putExtra("usuario_senha", usuario_senha);
         it.putExtra("usuario_email", usuario_email);
         startActivity(it);
+        finish();
     }
 
     public void act_editarNomeUsuario(View view){
         Intent it = new Intent(this, EditarNomeUsuario.class);
         it.putExtra("usuario_email", usuario_email);
         startActivity(it);
+        finish();
+    }
+
+    public void act_desativarUsuario(View view){
+        Intent it = new Intent(this, DesativarUsuario.class);
+        it.putExtra("usuario_email", usuario_email);
+        it.putExtra("usuario_senha", usuario_senha);
+        startActivity(it);
+        finish();
+
     }
 }

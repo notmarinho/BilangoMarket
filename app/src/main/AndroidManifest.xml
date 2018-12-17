@@ -31,7 +31,8 @@
         <activity android:name=".DeletarUsuario" />
         <activity android:name=".MenuEditarUsuario" />
         <activity android:name=".EditarSenha" />
-        <activity android:name=".EditarNomeUsuario"></activity>
+        <activity android:name=".EditarNomeUsuario" />
+        <activity android:name=".DesativarUsuario"></activity>
     </application>
 
 </manifest>

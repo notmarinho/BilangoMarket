@@ -123,12 +123,13 @@ public class UsuarioDAO {
         return usuariosLista;
 
     }
-    public boolean desativarUsuario(Usuario u){
+
+    public boolean desativarUsuario(String email){
         AjudanteBD ajudante = new AjudanteBD (contexto);
         SQLiteDatabase db = ajudante.getReadableDatabase();
 
         try{
-            String where = "EMAIL = '" + u.getEmail() + "'";  /*Parametro que sera buscado no banco nesse caso o EMAIL*/
+            String where = "EMAIL = '" + email + "'";  /*Parametro que sera buscado no banco nesse caso o EMAIL*/
             ContentValues cv = new ContentValues();
             cv.put(ContratoUsuario.COLUNA_STATUS,   0);      /*Definindo os valores de cada tabela*/
             db.update(ContratoUsuario.NOME_TABELA, cv, where, null);
