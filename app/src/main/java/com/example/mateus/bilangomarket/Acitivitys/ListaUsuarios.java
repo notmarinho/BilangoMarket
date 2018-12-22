@@ -1,5 +1,6 @@
-package com.example.mateus.bilangomarket;
+package com.example.mateus.bilangomarket.Acitivitys;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.mateus.bilangomarket.DATA.UsuarioDAO;
+import com.example.mateus.bilangomarket.R;
+import com.example.mateus.bilangomarket.Usuario;
 
 import java.util.ArrayList;
 

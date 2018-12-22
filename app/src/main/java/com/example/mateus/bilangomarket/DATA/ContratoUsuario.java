@@ -23,6 +23,6 @@ public class ContratoUsuario implements BaseColumns {
             ContratoUsuario.COLUNA_STATUS + " INTEGER)";
 
     public static final String SQL_DELETAR_TABELA_USUARIO =
-            "DROP TABLE IF EXISTS " + ContratoUsuario.NOME_TABELA;
+            "DROP TABLE IF EXISTS " + ContratoUsuario.NOME_TABELA + ";";
 
 }

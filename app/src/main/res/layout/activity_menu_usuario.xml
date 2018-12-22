@@ -121,6 +121,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="@color/colorAccent2"
+        android:onClick="act_listaAnuncios"
         android:text="Meus anúncios"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"

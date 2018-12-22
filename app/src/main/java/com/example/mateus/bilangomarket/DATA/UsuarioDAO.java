@@ -12,8 +12,11 @@ import java.util.ArrayList;
 
 public class UsuarioDAO {
     private Context contexto;
+
+
     public UsuarioDAO(Context context) {
         this.contexto = context;}
+
 
     public void inserirUsuario(Usuario usuario){
         AjudanteBD ajudante = new AjudanteBD(contexto);
@@ -31,6 +34,7 @@ public class UsuarioDAO {
         usuario.setID( novaLinhaID);
         db.close();
     }
+
     public Usuario getUsuarioEmail(String email){
         AjudanteBD ajudante = new AjudanteBD (contexto);
         SQLiteDatabase db = ajudante.getReadableDatabase();
@@ -178,6 +182,5 @@ public class UsuarioDAO {
             db.close();
         }
     }
-
 
 }

@@ -1,9 +1,14 @@
-package com.example.mateus.bilangomarket;
+package com.example.mateus.bilangomarket.Acitivitys;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.mateus.bilangomarket.Acitivitys.DesativarUsuario;
+import com.example.mateus.bilangomarket.Acitivitys.EditarNomeUsuario;
+import com.example.mateus.bilangomarket.Acitivitys.EditarSenha;
+import com.example.mateus.bilangomarket.R;
 
 public class MenuEditarUsuario extends AppCompatActivity {
     String usuario_nome;

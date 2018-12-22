@@ -1,4 +1,4 @@
-package com.example.mateus.bilangomarket;
+package com.example.mateus.bilangomarket.Acitivitys;
 
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.mateus.bilangomarket.DATA.UsuarioDAO;
+import com.example.mateus.bilangomarket.R;
+import com.example.mateus.bilangomarket.Usuario;
 
 public class Cadastro extends AppCompatActivity {
 
@@ -87,11 +89,7 @@ public class Cadastro extends AppCompatActivity {
                         if(erro = senha.length() < 5 || senha.length() > 15){
                             Toast.makeText(this, "Sua tem que ter entre 5 a 15 caractéres", Toast.LENGTH_LONG).show();
                             edt_senha.requestFocus();
-                        }else
-                            if (erro = isUsuarioInserido(email)){
-                                Toast.makeText(this, "Email ja inserido", Toast.LENGTH_SHORT).show();
-                                edt_email.requestFocus();
-                            }
+                        }
         if (!erro){
             cadastrar();
             finish();

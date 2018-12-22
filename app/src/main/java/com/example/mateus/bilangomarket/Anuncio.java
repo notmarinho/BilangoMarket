@@ -5,6 +5,15 @@ public class Anuncio {
     private String nome;
     private String descrição;
     private Float  preço;
+    private long usuarioID;
+
+    public long getUsuarioID() {
+        return usuarioID;
+    }
+
+    public void setUsuarioID(long usuarioID) {
+        this.usuarioID = usuarioID;
+    }
 
     public long getID() {
         return ID;

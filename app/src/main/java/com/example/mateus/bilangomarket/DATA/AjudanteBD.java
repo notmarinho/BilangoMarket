@@ -11,8 +11,8 @@ public class AjudanteBD  extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(ContratoUsuario.SQL_CRIAR_TABELA_USUARIO);
 
+        db.execSQL(ContratoUsuario.SQL_CRIAR_TABELA_USUARIO);
     }
 
     @Override

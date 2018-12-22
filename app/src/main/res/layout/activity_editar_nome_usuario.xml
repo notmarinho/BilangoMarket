@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
-    tools:context=".EditarNomeUsuario">
+    android:background="@drawable/gradient_background"
+    tools:context=".Acitivitys.EditarNomeUsuario">
 
     <TextView
         android:id="@+id/txt_title_editarNomeUsuario"

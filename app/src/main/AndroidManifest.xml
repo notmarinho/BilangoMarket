@@ -14,25 +14,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Acitivitys.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Cadastro" />
+        <activity android:name=".Acitivitys.Cadastro" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Acitivitys.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".ListaUsuarios" />
-        <activity android:name=".MenuUsuario" />
-        <activity android:name=".CadastrarAnuncio" />
+        <activity android:name=".Acitivitys.ListaUsuarios" />
+        <activity android:name=".Acitivitys.MenuUsuario" />
+        <activity android:name=".Acitivitys.CadastrarAnuncio" />
         <activity android:name=".DeletarUsuario" />
-        <activity android:name=".MenuEditarUsuario" />
-        <activity android:name=".EditarSenha" />
-        <activity android:name=".EditarNomeUsuario" />
-        <activity android:name=".DesativarUsuario"></activity>
+        <activity android:name=".Acitivitys.MenuEditarUsuario" />
+        <activity android:name=".Acitivitys.EditarSenha" />
+        <activity android:name=".Acitivitys.EditarNomeUsuario" />
+        <activity android:name=".Acitivitys.DesativarUsuario" />
+        <activity android:name=".Acitivitys.ListaAnuncios"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.mateus.bilangomarket;
+package com.example.mateus.bilangomarket.Acitivitys;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.mateus.bilangomarket.Acitivitys.CadastrarAnuncio;
+import com.example.mateus.bilangomarket.Acitivitys.ListaUsuarios;
+import com.example.mateus.bilangomarket.Acitivitys.LoginActivity;
+import com.example.mateus.bilangomarket.Acitivitys.MenuEditarUsuario;
 import com.example.mateus.bilangomarket.DATA.UsuarioDAO;
+import com.example.mateus.bilangomarket.R;
+import com.example.mateus.bilangomarket.Usuario;
 
 
 public class MenuUsuario extends AppCompatActivity {
@@ -42,6 +48,7 @@ public void act_deslogar(View v){
     }
 public void act_cadastrarAnuncio(View v){
         Intent it = new Intent(this, CadastrarAnuncio.class);
+        it.putExtra("usuario_email", usuario.getEmail());
         startActivity(it);
 }
 
@@ -52,5 +59,8 @@ public void act_menuEditarUsuario(View view){
         it.putExtra("usuario_senha", usuario.getSenha());
         it.putExtra("usuario_ID",    usuario.getID());
         startActivity(it);
+        finish();
 }
+
+
 }

@@ -1,14 +1,14 @@
-package com.example.mateus.bilangomarket;
+package com.example.mateus.bilangomarket.Acitivitys;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.mateus.bilangomarket.DATA.UsuarioDAO;
+import com.example.mateus.bilangomarket.R;
 
 public class EditarNomeUsuario extends AppCompatActivity {
 

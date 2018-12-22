@@ -1,4 +1,4 @@
-package com.example.mateus.bilangomarket;
+package com.example.mateus.bilangomarket.Acitivitys;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -33,6 +33,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mateus.bilangomarket.DATA.UsuarioDAO;
+import com.example.mateus.bilangomarket.R;
+import com.example.mateus.bilangomarket.Usuario;
 
 import java.util.ArrayList;
 import java.util.List;
