@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mateus.bilangomarket">
-
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_PROFILE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    package="com.example.mateus.multiplestables">
 
     <application
         android:allowBackup="true"
@@ -13,27 +8,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Acitivitys.MainActivity">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Activitys.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Acitivitys.Cadastro" />
-        <activity
-            android:name=".Acitivitys.LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".Acitivitys.ListaUsuarios" />
-        <activity android:name=".Acitivitys.MenuUsuario" />
-        <activity android:name=".Acitivitys.CadastrarAnuncio" />
-        <activity android:name=".DeletarUsuario" />
-        <activity android:name=".Acitivitys.MenuEditarUsuario" />
-        <activity android:name=".Acitivitys.EditarSenha" />
-        <activity android:name=".Acitivitys.EditarNomeUsuario" />
-        <activity android:name=".Acitivitys.DesativarUsuario" />
-        <activity android:name=".Acitivitys.ListaAnuncios"></activity>
+        <activity android:name=".Activitys.RegistrarUsuarioActivity" />
+        <activity android:name=".Activitys.RegistrarAnunciosActivity" />
+        <activity android:name=".Activitys.LoginActivity" />
+        <activity android:name=".Activitys.MenuActivity" />
+        <activity android:name=".Activitys.ListaDeAnunciosActivity" />
+        <activity android:name=".Activitys.EditarUsuarioMenuActivity" />
+        <activity android:name=".Activitys.EditarNomeActivity" />
+        <activity android:name=".Activitys.EditarSenhaActivity" />
+        <activity android:name=".Activitys.EditarDesativarUsuarioAcitivity" />
+        <activity android:name=".Activitys.EditarUsuarioMenuActivity" />
+        <activity android:name=".Activitys.EditarNomeActivity" />
+        <activity android:name=".Activitys.EditarSenhaActivity" />
+        <activity android:name=".Activitys.EditarDesativarContaActivity"></activity>
     </application>
 
 </manifest>
