@@ -84,4 +84,19 @@ public class AnuncioDAO {
 
         return listaAnuncios;
     }
+
+    public ArrayList<ArrayList> getAllAnunciosList(){
+        ArrayList<Anuncio> listaAnuncio = getAllAnuncios();
+        ArrayList<ArrayList> listaFinal = new ArrayList<>();
+
+        for (int i = 0; i < listaAnuncio.size(); i++){
+            ArrayList<String> item = new ArrayList<>();
+            Anuncio anuncio = listaAnuncio.get(i);
+            item.add(anuncio.getNome());
+            item.add(Float.toString(anuncio.getPreço()));
+            item.add(anuncio.getDescricao());
+            listaFinal.add(item);
+        }
+        return listaFinal;
+    }
 }

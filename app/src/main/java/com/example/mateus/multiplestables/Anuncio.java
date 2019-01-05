@@ -35,9 +35,13 @@ public class Anuncio {
         return preço;
     }
 
+    public String getPrecoString() {return Float.toString(preço);}
+
     public void setPreço(float preço) {
         this.preço = preço;
     }
+
+
 
     public String getDescricao() {
         return descricao;
