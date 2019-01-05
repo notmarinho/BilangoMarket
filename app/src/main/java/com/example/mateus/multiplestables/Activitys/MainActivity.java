@@ -12,7 +12,9 @@ import com.example.mateus.multiplestables.Activitys.RegistrarUsuarioActivity;
 import com.example.mateus.multiplestables.Anuncio;
 import com.example.mateus.multiplestables.AnunciosAdapter;
 import com.example.mateus.multiplestables.DATA.AnuncioDAO;
+import com.example.mateus.multiplestables.DATA.UsuarioDAO;
 import com.example.mateus.multiplestables.R;
+import com.example.mateus.multiplestables.Usuario;
 
 import java.util.ArrayList;
 

@@ -84,6 +84,24 @@ public class UsuarioDAO {
         return pesquisarUsuario;
     }
 
+    public Usuario getUsuarioByID(int ID){
+        Usuario pesquisarUsuario = null;
+
+        Cursor cursor = mDatabase.rawQuery("SELECT * FROM " + DBHelper.TABELA_USUARIO + " WHERE _id = " + ID, null);
+
+
+        if (cursor.getCount() != 0){
+            pesquisarUsuario = criarUsuario(cursor);
+        }
+
+        cursor.close();
+        close();
+
+        return pesquisarUsuario;
+
+
+    }
+
     public Usuario criarUsuario(Cursor cursor){
 
         cursor.moveToNext();

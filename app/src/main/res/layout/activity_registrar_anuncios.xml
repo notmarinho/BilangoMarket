@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Nome do Produto"
-            android:inputType="textPersonName" />
+            android:inputType="textCapWords" />
 
         <EditText
             android:id="@+id/edt_anuncio_preco"

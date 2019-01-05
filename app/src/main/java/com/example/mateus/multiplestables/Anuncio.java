@@ -41,8 +41,6 @@ public class Anuncio {
         this.preço = preço;
     }
 
-
-
     public String getDescricao() {
         return descricao;
     }
@@ -50,4 +48,7 @@ public class Anuncio {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
 }
+
+
