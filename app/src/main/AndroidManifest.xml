@@ -29,7 +29,8 @@
         <activity android:name=".Activitys.EditarNomeActivity" />
         <activity android:name=".Activitys.EditarSenhaActivity" />
         <activity android:name=".Activitys.EditarDesativarContaActivity" />
-        <activity android:name=".Activitys.TelaDeAnunciosActivity"></activity>
+        <activity android:name=".Activitys.TelaDeAnunciosActivity" />
+        <activity android:name=".Activitys.ItemClicadoActivity"></activity>
     </application>
 
 </manifest>
