@@ -1,7 +1,10 @@
 package com.example.mateus.multiplestables.Activitys;
 
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -43,5 +46,13 @@ public class ItemClicadoActivity extends AppCompatActivity {
             txt_anuncio_descricao.setText(anuncio_descricao);
         }
 
+        FloatingActionButton fab = findViewById(R.id.floatingButton);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Você precisa estar logado para adicionar este item ao carrinho", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
 }

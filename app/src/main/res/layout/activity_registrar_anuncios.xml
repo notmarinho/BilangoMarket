@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Descrição"
-            android:inputType="textPersonName" />
+            android:inputType="textMultiLine" />
     </LinearLayout>
 
     <LinearLayout

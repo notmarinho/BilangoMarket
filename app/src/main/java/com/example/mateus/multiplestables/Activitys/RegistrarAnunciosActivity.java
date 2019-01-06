@@ -42,7 +42,7 @@ public class RegistrarAnunciosActivity extends AppCompatActivity {
     public void cadastrarAnuncio(View view){
         boolean erro = false;
         String nome      = edt_anuncio_nome.getText().toString();
-        float preco      = Float.valueOf(edt_anuncio_preco.getText().toString());
+        String preco     = edt_anuncio_preco.getText().toString();
         String descricao = edt_anuncio_descricao.getText().toString();
         int DonoID       = usuario.getID();
 
@@ -52,7 +52,7 @@ public class RegistrarAnunciosActivity extends AppCompatActivity {
             edt_anuncio_nome.requestFocus();
         }
         else
-        if (erro = isCampoVazio(Float.toString(preco))){
+        if (erro = isCampoVazio(preco)){
             Toast.makeText(this, "Informe um preço para o anuncio", Toast.LENGTH_SHORT).show();
             edt_anuncio_preco.requestFocus();
         }
@@ -66,7 +66,7 @@ public class RegistrarAnunciosActivity extends AppCompatActivity {
                                                                                 //Caso nao houver nenhum erro, o anuncio é cadastrado no banco de dados
             Anuncio anuncio = new Anuncio();
             anuncio.setNome(nome);
-            anuncio.setPreço(preco);
+            anuncio.setPreço(Float.valueOf(preco));
             anuncio.setDescricao(descricao);
             anuncio.setDonoID(DonoID);
 
