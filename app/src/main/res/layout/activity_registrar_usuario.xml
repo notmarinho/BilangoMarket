@@ -13,9 +13,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
-        android:text="Informe os seus dados"
+        android:text="Informe os seus dados para criar uma conta"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailSubject" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout

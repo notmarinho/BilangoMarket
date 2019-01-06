@@ -30,7 +30,11 @@
         <activity android:name=".Activitys.EditarSenhaActivity" />
         <activity android:name=".Activitys.EditarDesativarContaActivity" />
         <activity android:name=".Activitys.TelaDeAnunciosActivity" />
-        <activity android:name=".Activitys.ItemClicadoActivity"></activity>
+        <activity android:name=".Activitys.ItemClicadoActivity" />
+        <activity
+            android:name=".Menu_deslizante"
+            android:label="@string/title_activity_menu_deslizante"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>

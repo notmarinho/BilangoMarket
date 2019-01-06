@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.mateus.multiplestables.DATA.UsuarioDAO;
+import com.example.mateus.multiplestables.Menu_deslizante;
 import com.example.mateus.multiplestables.R;
 import com.example.mateus.multiplestables.Usuario;
 
@@ -38,41 +39,12 @@ public class MenuActivity extends AppCompatActivity {
     }
     @Override
     public void onBackPressed(){
-        AlertDialog.Builder deslogar = new AlertDialog.Builder(this);
-        deslogar.setTitle("Aviso");
-        deslogar
-                .setIcon(R.mipmap.ic_aviso)
-                .setMessage("Voce deseja deslogar?")
-                .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent it = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(it);
-                        finish();
-                    }
-                })
-                .setNegativeButton("Nao", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                });
-        AlertDialog alertDialog = deslogar.create();
-        alertDialog.show();
-    }
-
-
-    public void act_novoAnuncio(View view){
-        Intent it = new Intent(this, RegistrarAnunciosActivity.class);
+        Intent it = new Intent(this, Menu_deslizante.class);
         it.putExtra("usuario_email", usuario_email);
         startActivity(it);
+        finish();
     }
 
-    public void act_meusAnuncios(View view){
-        Intent it = new Intent(this, ListaDeAnunciosActivity.class);
-        it.putExtra("usuario_email", usuario_email);
-        startActivity(it);
-    }
 
    public void act_editarUsuarioMenu(View view){
         Intent it = new Intent(this, EditarUsuarioMenuActivity.class);

@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.mateus.multiplestables.DATA.DBHelper;
 import com.example.mateus.multiplestables.DATA.UsuarioDAO;
+import com.example.mateus.multiplestables.Menu_deslizante;
 import com.example.mateus.multiplestables.R;
 import com.example.mateus.multiplestables.Usuario;
 
@@ -52,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 if (ativarUsuario()){
                                     Toast.makeText(LoginActivity.this, "Usuario ativado novamente", Toast.LENGTH_SHORT).show();
-                                    Intent it = new Intent(getApplicationContext(), MenuActivity.class);
+                                    Intent it = new Intent(getApplicationContext(), Menu_deslizante.class);
                                     it.putExtra("usuario_email", login_email);
                                     startActivity(it);
                                     MainActivity.mainActivity.finish(); // Fechando a activity Principal
@@ -71,11 +72,11 @@ public class LoginActivity extends AppCompatActivity {
 
             }
             else if (usuario.getSenha().equals(login_senha)){
-                Intent it = new Intent(this, MenuActivity.class);
+                Intent it = new Intent(this, Menu_deslizante.class);
                 it.putExtra("usuario_email", login_email);
                 startActivity(it);
-                MainActivity.mainActivity.finish(); // Fechando a activity Principal
-                finish(); //Fechando a acitiviy atual
+                MainActivity.mainActivity.finish();                                 // Fechando a activity Principal
+                finish();                                                           // Fechando a acitiviy atual
 
             }else {
                 Toast.makeText(this, "Senha incorreta", Toast.LENGTH_SHORT).show();
@@ -85,6 +86,13 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Email não cadastrado", Toast.LENGTH_SHORT).show();
             edt_login_email.requestFocus();
         }
+    }
+
+    public void act_cadastro(View view){
+        Intent it = new Intent(this, RegistrarUsuarioActivity.class);
+        startActivity(it);
+        finish();
+
     }
 
 }

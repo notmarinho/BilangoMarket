@@ -1,5 +1,6 @@
 package com.example.mateus.multiplestables.Activitys;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 import com.example.mateus.multiplestables.Anuncio;
 import com.example.mateus.multiplestables.DATA.AnuncioDAO;
 import com.example.mateus.multiplestables.DATA.UsuarioDAO;
+import com.example.mateus.multiplestables.Menu_deslizante;
 import com.example.mateus.multiplestables.R;
 import com.example.mateus.multiplestables.Usuario;
 
@@ -74,7 +76,13 @@ public class RegistrarAnunciosActivity extends AppCompatActivity {
             anuncioDAO.inserirAnuncio(anuncio);                                 //Linha onde o anuncio é inserido no banco de dados
             ArrayList<Anuncio> listaAnuncios = anuncioDAO.getAllAnuncios();
             Toast.makeText(this, "Anuncio Cadastrado", Toast.LENGTH_SHORT).show();
-            finish();}
+
+            Intent it = new Intent(this, Menu_deslizante.class); //Chamando a act novamente para o Listview ser atualizado com o novo item que foi inserido
+            it.putExtra("usuario_email", usuario_email);
+            startActivity(it);
+            Menu_deslizante.menu_deslizante.finish();
+            finish();
+        }
     }
 
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Meu perfil" />
+        <item
+            android:id="@+id/nav_carrinho"
+            android:icon="@drawable/ic_carinho_compras_black_24dp"
+            android:title="Carrinho" />
+        <item
+            android:id="@+id/nav_usuarioAnuncios"
+            android:icon="@drawable/ic_anuncios_black_24dp"
+            android:title="Meus Anuncios" />
+        <item
+            android:id="@+id/nav_deslogar"
+            android:icon="@drawable/ic_voltar_black_24dp"
+            android:title="Deslogar" />
+    </group>
+
+</menu>
