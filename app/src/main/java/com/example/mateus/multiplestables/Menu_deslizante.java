@@ -162,6 +162,7 @@ public class Menu_deslizante extends AppCompatActivity
             Intent it = new Intent(this, MenuActivity.class);
             it.putExtra("usuario_email", usuario_email);
             startActivity(it);
+            finish();
 
         } else if (id == R.id.nav_carrinho) {
 
