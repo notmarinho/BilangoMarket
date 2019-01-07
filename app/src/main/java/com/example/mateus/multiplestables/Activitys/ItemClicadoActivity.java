@@ -15,6 +15,7 @@ import com.example.mateus.multiplestables.Anuncio;
 import com.example.mateus.multiplestables.Menu_deslizante;
 import com.example.mateus.multiplestables.R;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class ItemClicadoActivity extends AppCompatActivity {
@@ -61,8 +62,9 @@ public class ItemClicadoActivity extends AppCompatActivity {
             idAnunciosCarrinho= bundle.getIntegerArrayList("carrinho");
 
             //Mudando os textos para as informaçoes do anuncio que foi clicado
+
             txt_anuncio_nome.setText(anuncio_nome);
-            txt_anuncio_preco.setText(anuncio_preco);
+            txt_anuncio_preco.setText(anuncio_preco+"0");
             txt_anuncio_descricao.setText(anuncio_descricao);
 
             usuario_email = bundle.getString("usuario_email");
