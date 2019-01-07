@@ -50,15 +50,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/button_desing"
             android:onClick="act_menuUsuario"
-            android:text="Voltar" />
+            android:text="Voltar"
+            android:textColor="@color/colorPrimary" />
 
         <Button
             android:id="@+id/btn_mudarNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/button_desing"
             android:onClick="editarNome"
-            android:text="Confirmar" />
+            android:text="Confirmar"
+            android:textColor="@color/colorPrimary" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

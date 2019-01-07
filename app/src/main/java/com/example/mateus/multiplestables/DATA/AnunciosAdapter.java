@@ -13,6 +13,7 @@ import com.example.mateus.multiplestables.R;
 
 import org.w3c.dom.Text;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class AnunciosAdapter  extends ArrayAdapter<Anuncio> {
@@ -36,9 +37,10 @@ public class AnunciosAdapter  extends ArrayAdapter<Anuncio> {
         TextView precoAnuncio = (TextView) rowView.findViewById(R.id.precoAnuncio);
         TextView descricaoAnuncio = (TextView) rowView.findViewById(R.id.descricaoAnuncio);
 
-
+        DecimalFormat df = new DecimalFormat("0.00");
+        String total  = df.format(elementos.get(position).getPreço());
         nomeAnuncio.setText(elementos.get(position).getNome());
-        precoAnuncio.setText(elementos.get(position).getPrecoString());
+        precoAnuncio.setText(total);
         descricaoAnuncio.setText(elementos.get(position).getDescricao());
 
 

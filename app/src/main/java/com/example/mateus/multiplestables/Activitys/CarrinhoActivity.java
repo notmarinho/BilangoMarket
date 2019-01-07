@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -18,6 +19,7 @@ import com.example.mateus.multiplestables.DATA.AnunciosAdapter;
 import com.example.mateus.multiplestables.Menu_deslizante;
 import com.example.mateus.multiplestables.R;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class CarrinhoActivity extends AppCompatActivity {
@@ -45,7 +47,9 @@ public class CarrinhoActivity extends AppCompatActivity {
                 anunciosCarrinho.add(anuncio);
                 preco += anuncio.getPreço();
             }
-            txt_precoTotal.setText(Float.toString(preco));
+            DecimalFormat df = new DecimalFormat("0.00");
+            String total  = df.format(preco);
+            txt_precoTotal.setText(total);
             ListView listView = findViewById(R.id.listViewCarrinho);
             ArrayAdapter adapter = new AnunciosAdapter(this, anunciosCarrinho);
             listView.setAdapter(adapter);
@@ -88,12 +92,6 @@ public class CarrinhoActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        Bundle b = new Bundle();
-        b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
-        Intent it = new Intent(this, Menu_deslizante.class);
-        it.putExtras(b);
-        it.putExtra("usuario_email", usuario_email);
-        startActivity(it);
         finish();
     }
 
@@ -106,16 +104,18 @@ public class CarrinhoActivity extends AppCompatActivity {
             AnuncioDAO anuncioDAO = new AnuncioDAO(getApplicationContext());
             for (int i = 0; i < idAnunciosCarrinho.size(); i++) {
                 anuncioDAO.deleteAnuncio(idAnunciosCarrinho.get(i));
-                idAnunciosCarrinho.remove(i);
             }
+            idAnunciosCarrinho.clear();
             Toast.makeText(this, "Compra Efetuada com sucesso", Toast.LENGTH_SHORT).show();
             Bundle b = new Bundle();
             b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
             Intent it = new Intent(this, Menu_deslizante.class);
             it.putExtras(b);
             it.putExtra("usuario_email", usuario_email);
-            startActivity(it);
             finish();
+            Menu_deslizante.menu_deslizante.finish();
+            startActivity(it);
+
         }else {
             Toast.makeText(this, "Adicione algum item ao carrinho para comprar, bilango demais...", Toast.LENGTH_SHORT).show();
         }

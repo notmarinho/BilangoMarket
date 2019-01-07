@@ -55,8 +55,10 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/button_desing"
         android:onClick="logar"
         android:text="Logar"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/btn_naoTenhoCadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
