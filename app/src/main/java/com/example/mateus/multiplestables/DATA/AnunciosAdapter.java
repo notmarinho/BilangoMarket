@@ -1,4 +1,4 @@
-package com.example.mateus.multiplestables;
+package com.example.mateus.multiplestables.DATA;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,7 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.mateus.multiplestables.Anuncio;
 import com.example.mateus.multiplestables.DATA.UsuarioDAO;
+import com.example.mateus.multiplestables.R;
 
 import org.w3c.dom.Text;
 

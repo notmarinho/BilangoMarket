@@ -1,6 +1,9 @@
 package com.example.mateus.multiplestables;
 
-public class Anuncio {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Anuncio{
     private int ID;
     private int donoID;
     private String nome;
@@ -35,7 +38,9 @@ public class Anuncio {
         return preço;
     }
 
-    public String getPrecoString() {return Float.toString(preço);}
+    public String getPrecoString() {
+        return Float.toString(preço);
+    }
 
     public void setPreço(float preço) {
         this.preço = preço;
@@ -48,7 +53,5 @@ public class Anuncio {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-
 }
-
 

@@ -11,11 +11,15 @@ import android.widget.Toast;
 
 import com.example.mateus.multiplestables.DATA.UsuarioDAO;
 import com.example.mateus.multiplestables.R;
+import com.example.mateus.multiplestables.Usuario;
+
+import java.util.ArrayList;
 
 public class EditarNomeActivity extends AppCompatActivity {
 
     String usuario_email;
     EditText edt_editarNome;
+    ArrayList<Integer> idAnunciosCarrinho;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +27,21 @@ public class EditarNomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_editar_nome);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
-            usuario_email = bundle.getString("usuario_email");
+            usuario_email      = bundle.getString("usuario_email");
+            idAnunciosCarrinho = bundle.getIntegerArrayList("carrinho");
         }
-        edt_editarNome = (EditText)findViewById(R.id.edt_editarNome);
+        edt_editarNome = findViewById(R.id.edt_editarNome);
+    }
+
+    @Override
+    public void onBackPressed(){
+        Bundle b = new Bundle();
+        b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
+        Intent it = new Intent(this, EditarUsuarioMenuActivity.class);
+        it.putExtras(b);
+        it.putExtra("usuario_email", usuario_email);
+        startActivity(it);
+        finish();
     }
 
     public void editarNome(View view){
@@ -57,9 +73,14 @@ public class EditarNomeActivity extends AppCompatActivity {
     }
 
     public void act_menuUsuario(View view){
+        Bundle b = new Bundle();
+        b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
         Intent it = new Intent(this, EditarUsuarioMenuActivity.class);
+        it.putExtras(b);
         it.putExtra("usuario_email", usuario_email);
         startActivity(it);
         finish();
     }
+
+
 }

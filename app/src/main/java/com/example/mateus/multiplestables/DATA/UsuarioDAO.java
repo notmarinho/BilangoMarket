@@ -98,15 +98,13 @@ public class UsuarioDAO {
         close();
 
         return pesquisarUsuario;
-
-
     }
 
     public Usuario criarUsuario(Cursor cursor){
 
         cursor.moveToNext();
 
-        int idIndex     = cursor.getColumnIndexOrThrow(DBHelper.COLUNA_ANUNCIO_ID);
+        int idIndex     = cursor.getColumnIndexOrThrow(DBHelper.COLUNA_USUARIO_ID);
         int nomeIndex   = cursor.getColumnIndexOrThrow(DBHelper.COLUNA_USUARIO_NOME);
         int emailIndex  = cursor.getColumnIndexOrThrow(DBHelper.COLUNA_USUARIO_SENHA);
         int senhaIndex  = cursor.getColumnIndexOrThrow(DBHelper.COLUNA_USUARIO_SENHA);

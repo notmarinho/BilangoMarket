@@ -19,7 +19,7 @@
         <activity android:name=".Activitys.RegistrarUsuarioActivity" />
         <activity android:name=".Activitys.RegistrarAnunciosActivity" />
         <activity android:name=".Activitys.LoginActivity" />
-        <activity android:name=".Activitys.MenuActivity" />
+        <activity android:name=".Activitys.PerfilUsuarioActivity" />
         <activity android:name=".Activitys.ListaDeAnunciosActivity" />
         <activity android:name=".Activitys.EditarUsuarioMenuActivity" />
         <activity android:name=".Activitys.EditarNomeActivity" />
@@ -34,7 +34,8 @@
         <activity
             android:name=".Menu_deslizante"
             android:label="@string/title_activity_menu_deslizante"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activitys.CarrinhoActivity"></activity>
     </application>
 
 </manifest>

@@ -1,11 +1,11 @@
 package com.example.mateus.multiplestables;
 
 import android.app.Activity;
+import android.content.ClipData;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -21,15 +21,18 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.mateus.multiplestables.Activitys.CarrinhoActivity;
 import com.example.mateus.multiplestables.Activitys.ItemClicadoActivity;
 import com.example.mateus.multiplestables.Activitys.ListaDeAnunciosActivity;
 import com.example.mateus.multiplestables.Activitys.MainActivity;
-import com.example.mateus.multiplestables.Activitys.MenuActivity;
+import com.example.mateus.multiplestables.Activitys.PerfilUsuarioActivity;
 import com.example.mateus.multiplestables.Activitys.RegistrarAnunciosActivity;
 import com.example.mateus.multiplestables.DATA.AnuncioDAO;
+import com.example.mateus.multiplestables.DATA.AnunciosAdapter;
 import com.example.mateus.multiplestables.DATA.UsuarioDAO;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Menu_deslizante extends AppCompatActivity
 
@@ -40,6 +43,7 @@ public class Menu_deslizante extends AppCompatActivity
     TextView txt_usuarioNome;
     TextView txt_usuarioEmail;
     public static Activity menu_deslizante;
+    ArrayList<Integer> idAnunciosCarrinho;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,25 +62,29 @@ public class Menu_deslizante extends AppCompatActivity
         Bundle bundle = getIntent().getExtras();
 
         if (bundle!= null){
-            usuario_email = bundle.getString("usuario_email");
+            idAnunciosCarrinho = bundle.getIntegerArrayList("carrinho");
+            usuario_email      = bundle.getString("usuario_email");
+
             UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
             usuario = usuarioDAO.getUsuarioByEmail(usuario_email);
             txt_usuarioNome.setText(usuario.getNome());
             txt_usuarioEmail.setText(usuario_email);
-
         }
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);                   //Botão flutuante
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle b = new Bundle();
+                b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
                 Intent it = new Intent(getApplicationContext(), RegistrarAnunciosActivity.class);
+                it.putExtras(b);
                 it.putExtra("usuario_email", usuario_email);
                 startActivity(it);
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -84,7 +92,7 @@ public class Menu_deslizante extends AppCompatActivity
 
         navigationView.setNavigationItemSelectedListener(this);
 
-        ListView listView = (ListView)findViewById(R.id.listViewLogado);
+        ListView listView = findViewById(R.id.listViewLogado);
         final AnuncioDAO anuncioDAO = new AnuncioDAO(getApplicationContext());
         ArrayAdapter adapter = new AnunciosAdapter(this, anuncioDAO.getAllAnuncios());
         listView.setAdapter(adapter);
@@ -95,10 +103,15 @@ public class Menu_deslizante extends AppCompatActivity
                 String anuncio_nome      = lista.get(position).getNome();
                 String anuncio_preco     = lista.get(position).getPrecoString();
                 String anuncio_descricao = lista.get(position).getDescricao();
+                int    anuncio_ID        = lista.get(position).getID();
+                Bundle b  = new Bundle();
+                b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
                 Intent it = new Intent(getApplicationContext(), ItemClicadoActivity.class);
-                it.putExtra("anuncio_nome", anuncio_nome);                            //Enviando os dados para a Activity que aparecera todos os dados do anuncio
+                it.putExtras(b);
+                it.putExtra("anuncio_nome", anuncio_nome);                            // Enviando os dados para a Activity que aparecera todos os dados do anuncio
                 it.putExtra("anuncio_preco", anuncio_preco);
                 it.putExtra("anuncio_descricao", anuncio_descricao);
+                it.putExtra("anuncio_ID", anuncio_ID);
                 it.putExtra("usuario_email", usuario_email);
                 startActivity(it);
             }
@@ -145,8 +158,13 @@ public class Menu_deslizante extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_carrinho) {
+            Bundle b = new Bundle();
+            b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
+            Intent it = new Intent(this, CarrinhoActivity.class);
+            it.putExtra("usuario_email", usuario_email);
+            it.putExtras(b);
+            startActivity(it);
         }
 
         return super.onOptionsItemSelected(item);
@@ -159,12 +177,21 @@ public class Menu_deslizante extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
-            Intent it = new Intent(this, MenuActivity.class);
+            Bundle b = new Bundle();
+            b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
+            Intent it = new Intent(this, PerfilUsuarioActivity.class);
+            it.putExtras(b);
             it.putExtra("usuario_email", usuario_email);
             startActivity(it);
             finish();
 
         } else if (id == R.id.nav_carrinho) {
+            Bundle b = new Bundle();
+            b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
+            Intent it = new Intent(this, CarrinhoActivity.class);
+            it.putExtra("usuario_email", usuario_email);
+            it.putExtras(b);
+            startActivity(it);
 
         } else if (id == R.id.nav_usuarioAnuncios) {
             Intent it = new Intent(this, ListaDeAnunciosActivity.class);

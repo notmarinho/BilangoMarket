@@ -9,9 +9,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.mateus.multiplestables.Activitys.RegistrarUsuarioActivity;
 import com.example.mateus.multiplestables.Anuncio;
-import com.example.mateus.multiplestables.AnunciosAdapter;
+import com.example.mateus.multiplestables.DATA.AnunciosAdapter;
 import com.example.mateus.multiplestables.DATA.AnuncioDAO;
 import com.example.mateus.multiplestables.DATA.UsuarioDAO;
 import com.example.mateus.multiplestables.R;
@@ -38,10 +37,12 @@ public class MainActivity extends AppCompatActivity {
                 String anuncio_nome      = lista.get(position).getNome();
                 String anuncio_preco     = lista.get(position).getPrecoString();
                 String anuncio_descricao = lista.get(position).getDescricao();
+                int    anuncio_ID        = lista.get(position).getID();
                 Intent it = new Intent(getApplicationContext(), ItemClicadoActivity.class);
                 it.putExtra("anuncio_nome", anuncio_nome);                            //Enviando os dados para a Activity que aparecera todos os dados do anuncio
                 it.putExtra("anuncio_preco", anuncio_preco);
                 it.putExtra("anuncio_descricao", anuncio_descricao);
+                it.putExtra("anuncio_ID", anuncio_ID);
                 startActivity(it);
             }
         });

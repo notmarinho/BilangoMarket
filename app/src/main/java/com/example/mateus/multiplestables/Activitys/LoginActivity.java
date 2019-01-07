@@ -15,10 +15,14 @@ import com.example.mateus.multiplestables.Menu_deslizante;
 import com.example.mateus.multiplestables.R;
 import com.example.mateus.multiplestables.Usuario;
 
+import java.util.ArrayList;
+
 public class LoginActivity extends AppCompatActivity {
 
     EditText edt_login_email;
     EditText edt_login_senha;
+
+    ArrayList<Integer> idAnunciosCarrinho = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +57,10 @@ public class LoginActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 if (ativarUsuario()){
                                     Toast.makeText(LoginActivity.this, "Usuario ativado novamente", Toast.LENGTH_SHORT).show();
+                                    Bundle b  = new Bundle();
+                                    b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
                                     Intent it = new Intent(getApplicationContext(), Menu_deslizante.class);
+                                    it.putExtras(b);
                                     it.putExtra("usuario_email", login_email);
                                     startActivity(it);
                                     MainActivity.mainActivity.finish(); // Fechando a activity Principal
@@ -72,7 +79,11 @@ public class LoginActivity extends AppCompatActivity {
 
             }
             else if (usuario.getSenha().equals(login_senha)){
-                Intent it = new Intent(this, Menu_deslizante.class);
+                Bundle b  = new Bundle();
+                System.out.println(idAnunciosCarrinho);
+                b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
+                Intent it = new Intent(getApplicationContext(), Menu_deslizante.class);
+                it.putExtras(b);
                 it.putExtra("usuario_email", login_email);
                 startActivity(it);
                 MainActivity.mainActivity.finish();                                 // Fechando a activity Principal

@@ -24,6 +24,7 @@ public class RegistrarAnunciosActivity extends AppCompatActivity {
     EditText edt_anuncio_nome;
     EditText edt_anuncio_preco;
     EditText edt_anuncio_descricao;
+    ArrayList<Integer> idAnunciosCarrinho;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +32,11 @@ public class RegistrarAnunciosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registrar_anuncios);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
-            usuario_email = bundle.getString("usuario_email");
+            usuario_email      = bundle.getString("usuario_email");
+            idAnunciosCarrinho = bundle.getIntegerArrayList("carrinho");
             UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
             usuario = usuarioDAO.getUsuarioByEmail(usuario_email);
+
         }
 
         edt_anuncio_nome  = (EditText)findViewById(R.id.edt_anuncioNome);
@@ -77,8 +80,11 @@ public class RegistrarAnunciosActivity extends AppCompatActivity {
             ArrayList<Anuncio> listaAnuncios = anuncioDAO.getAllAnuncios();
             Toast.makeText(this, "Anuncio Cadastrado", Toast.LENGTH_SHORT).show();
 
+            Bundle b = new Bundle();
+            b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
             Intent it = new Intent(this, Menu_deslizante.class); //Chamando a act novamente para o Listview ser atualizado com o novo item que foi inserido
             it.putExtra("usuario_email", usuario_email);
+            it.putExtras(b);
             startActivity(it);
             Menu_deslizante.menu_deslizante.finish();
             finish();

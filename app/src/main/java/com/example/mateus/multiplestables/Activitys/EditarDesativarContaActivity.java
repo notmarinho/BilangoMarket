@@ -13,12 +13,16 @@ import com.example.mateus.multiplestables.DATA.UsuarioDAO;
 import com.example.mateus.multiplestables.R;
 import com.example.mateus.multiplestables.Usuario;
 
+import java.util.ArrayList;
+
 public class EditarDesativarContaActivity extends AppCompatActivity {
     String usuario_email;
     Usuario usuario;
 
     EditText edt_emailDesativar;
     EditText edt_senhaDesativar;
+
+    ArrayList<Integer> idAnunciosCarrinho;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,20 +33,29 @@ public class EditarDesativarContaActivity extends AppCompatActivity {
             usuario_email = bundle.getString("usuario_email");
             UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
             usuario = usuarioDAO.getUsuarioByEmail(usuario_email);
+            idAnunciosCarrinho = bundle.getIntegerArrayList("carrinho");
         }
-        edt_emailDesativar = (EditText)findViewById(R.id.edt_emailDesativar);
-        edt_senhaDesativar = (EditText)findViewById(R.id.edt_senhaDesativar);
+        edt_emailDesativar = findViewById(R.id.edt_emailDesativar);
+        edt_senhaDesativar = findViewById(R.id.edt_senhaDesativar);
         UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
         usuario = usuarioDAO.getUsuarioByEmail(usuario_email);
+    }
+
+    @Override
+    public void onBackPressed(){
+        Bundle b = new Bundle();
+        b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
+        Intent it = new Intent(this, EditarUsuarioMenuActivity.class);
+        it.putExtras(b);
+        it.putExtra("usuario_email", usuario_email);
+        startActivity(it);
+        finish();
     }
 
     public void desativarUsuario(View view){
         final UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
         String email = edt_emailDesativar.getText().toString();
         String senha = edt_senhaDesativar.getText().toString();
-
-        String senha_usuario = usuario.getSenha();
-
 
         if (email.equals(usuario_email)){
             if (senha.equals(usuario.getSenha())){
@@ -57,7 +70,7 @@ public class EditarDesativarContaActivity extends AppCompatActivity {
                                 usuarioDAO.desativarUsuario(usuario_email);
                                 Intent it = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(it);
-                                MenuActivity.menuActivity.finish();
+                                PerfilUsuarioActivity.menuActivity.finish();
                                 EditarUsuarioMenuActivity.editarUsuarioActivity.finish();
                                 Toast.makeText(EditarDesativarContaActivity.this, "Conta desativada com sucesso", Toast.LENGTH_SHORT).show();
                                 finish();
@@ -78,9 +91,14 @@ public class EditarDesativarContaActivity extends AppCompatActivity {
     }
 
     public void act_menuUsuario(View view){
+        Bundle b = new Bundle();
+        b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
         Intent it = new Intent(this, EditarUsuarioMenuActivity.class);
+        it.putExtras(b);
         it.putExtra("usuario_email", usuario_email);
         startActivity(it);
         finish();
     }
+
+
 }

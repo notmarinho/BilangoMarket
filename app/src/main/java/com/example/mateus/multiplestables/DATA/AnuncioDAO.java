@@ -51,6 +51,24 @@ public class AnuncioDAO {
         close();
     }
 
+    public boolean deleteAnuncio(int ID) {
+        DBHelper dbHelper = new DBHelper(mContext);
+        open();
+
+        String deleteUsuario = dbHelper.COLUNA_ANUNCIO_ID + " = '" + ID + "'";
+
+        try {
+            mDatabase.delete(dbHelper.TABELA_ANUNCIO, deleteUsuario, null);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            close();
+        }
+
+    }
+
     public ArrayList<Anuncio> getAllAnuncios(){
         DBHelper dbHelper = new DBHelper(mContext);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
@@ -97,6 +115,48 @@ public class AnuncioDAO {
             item.add(anuncio.getDescricao());
             listaFinal.add(item);
         }
+
         return listaFinal;
+    }
+
+    public Anuncio getAnuncioByID(int ID){
+        Anuncio pesquisarAnuncio = null;
+
+        Cursor cursor = mDatabase.rawQuery("SELECT * FROM " + DBHelper.TABELA_ANUNCIO + " WHERE _id = " + ID, null);
+
+        if (cursor.getCount() != 0){
+            pesquisarAnuncio = criarAnuncio(cursor);
+        }
+
+        cursor.close();
+        close();
+
+        return pesquisarAnuncio;
+    }
+
+    public Anuncio criarAnuncio(Cursor cursor){
+
+        cursor.moveToNext();
+
+        int idIndex     = cursor.getColumnIndexOrThrow(DBHelper.COLUNA_ANUNCIO_ID);
+        int nomeIndex   = cursor.getColumnIndexOrThrow(DBHelper.COLUNA_ANUNCIO_NOME);
+        int precoIndex       = cursor.getColumnIndexOrThrow(DBHelper.COLUNA_ANUNCIO_PRECO);
+        int descricaoIndex   = cursor.getColumnIndexOrThrow(DBHelper.COLUNA_ANUNCIO_DESCRICAO);
+        int donoIDIndex      = cursor.getColumnIndexOrThrow(DBHelper.COLUNA_ANUNCIO_DONOID);
+
+        int id       = cursor.getInt(idIndex);
+        int donoID   = cursor.getInt(donoIDIndex);
+        float  preco = cursor.getFloat(precoIndex);
+        String descricao = cursor.getString(descricaoIndex);
+        String nome  = cursor.getString(nomeIndex);
+
+        Anuncio anuncio = new Anuncio();
+        anuncio.setID(id);
+        anuncio.setNome(nome);
+        anuncio.setPreço(preco);
+        anuncio.setDescricao(descricao);
+        anuncio.setDonoID(donoID);
+
+        return anuncio;
     }
 }
