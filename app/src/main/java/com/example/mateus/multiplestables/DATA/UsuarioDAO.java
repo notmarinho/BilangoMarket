@@ -161,6 +161,7 @@ public class UsuarioDAO {
     }
 
     public boolean desativarUsuario(String email){
+        open();
         try {
             String where = "EMAIL = '" + email + "'";
             ContentValues cv = new ContentValues();
@@ -177,6 +178,7 @@ public class UsuarioDAO {
     }
 
     public boolean ativarUsuario(String email){
+        open();
         try {
             String where = "EMAIL = '" + email + "'";
             ContentValues cv = new ContentValues();
@@ -193,6 +195,7 @@ public class UsuarioDAO {
     }
 
     public boolean editarSenha(String email, String novaSenha){
+        open();
         try {
             String where = "EMAIL = '" + email + "'";
             ContentValues cv = new ContentValues();
@@ -208,6 +211,7 @@ public class UsuarioDAO {
     }
 
     public boolean editarNomeUsuario(String email, String nomeUsuario){
+        open();
         try {
             String where = "EMAIL = '" + email + "'";
             ContentValues cv = new ContentValues();

@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Activitys.EditarSenhaActivity">
+    tools:context=".Activitys.EditarUsuario.EditarSenhaActivity">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="Alterar a senha"
         android:textSize="18sp"
@@ -25,9 +25,9 @@
         android:id="@+id/edt_senhaAtual"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:hint="Senha Atual"
         android:inputType="textPassword"
@@ -39,9 +39,9 @@
         android:id="@+id/edt_novaSenha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:hint="Nova Senha"
         android:inputType="textPassword"
@@ -53,9 +53,9 @@
         android:id="@+id/edt_cofirNovaSenha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:hint="Confirmar nova senha"
         android:inputType="textPassword"
@@ -63,35 +63,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_novaSenha" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/btn_mudarSenha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginBottom="8dp"
-        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/button_desing"
+        android:onClick="editarSenha"
+        android:text="Confirmar"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/btn_voltar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/button_desing"
-            android:onClick="act_menuUsuario"
-            android:text="Voltar"
-            android:textColor="@color/colorPrimary" />
-
-        <Button
-            android:id="@+id/btn_mudarSenha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/button_desing"
-            android:onClick="editarSenha"
-            android:text="Confirmar"
-            android:textColor="@color/colorPrimary" />
-    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

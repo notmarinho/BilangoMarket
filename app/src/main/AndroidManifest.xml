@@ -19,23 +19,30 @@
         <activity android:name=".Activitys.RegistrarUsuarioActivity" />
         <activity android:name=".Activitys.RegistrarAnunciosActivity" />
         <activity android:name=".Activitys.LoginActivity" />
-        <activity android:name=".Activitys.PerfilUsuarioActivity" />
-        <activity android:name=".Activitys.ListaDeAnunciosActivity" />
-        <activity android:name=".Activitys.EditarUsuarioMenuActivity" />
-        <activity android:name=".Activitys.EditarNomeActivity" />
-        <activity android:name=".Activitys.EditarSenhaActivity" />
+        <activity android:name=".Activitys.EditarUsuario.PerfilUsuarioActivity" />
+        <activity android:name=".Activitys.EditarAnuncio.ListaDeAnunciosActivity" />
+        <activity android:name=".Activitys.EditarUsuario.EditarUsuarioMenuActivity" />
+        <activity android:name=".Activitys.EditarUsuario.EditarNomeActivity" />
+        <activity android:name=".Activitys.EditarUsuario.EditarSenhaActivity" />
         <activity android:name=".Activitys.EditarDesativarUsuarioAcitivity" />
-        <activity android:name=".Activitys.EditarUsuarioMenuActivity" />
-        <activity android:name=".Activitys.EditarNomeActivity" />
-        <activity android:name=".Activitys.EditarSenhaActivity" />
-        <activity android:name=".Activitys.EditarDesativarContaActivity" />
+        <activity android:name=".Activitys.EditarUsuario.EditarUsuarioMenuActivity" />
+        <activity android:name=".Activitys.EditarUsuario.EditarNomeActivity" />
+        <activity android:name=".Activitys.EditarUsuario.EditarSenhaActivity" />
+        <activity android:name=".Activitys.EditarUsuario.EditarDesativarContaActivity" />
         <activity android:name=".Activitys.TelaDeAnunciosActivity" />
         <activity android:name=".Activitys.ItemClicadoActivity" />
         <activity
             android:name=".Menu_deslizante"
             android:label="@string/title_activity_menu_deslizante"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".Activitys.CarrinhoActivity"></activity>
+        <activity android:name=".Activitys.CarrinhoActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Activitys.EditarAnuncio.EditarAnuncioMenuActivity" />
+        <activity android:name=".Activitys.EditarAnuncio.MenuEditarAnuncio" />
     </application>
 
 </manifest>

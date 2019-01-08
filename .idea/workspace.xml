@@ -15,6 +15,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b2f5e39-5ac3-4325-b556-f317dbf6da46" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/EditarAnuncioMenuActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/changa_extralight.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_editar_anuncio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/font_certs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -23,9 +28,30 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/ItemClicadoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/ItemClicadoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarDesativarContaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarDesativarContaActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarNomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarNomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuarioMenuActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarUsuarioMenuActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/ListaDeAnunciosActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/ListaDeAnunciosActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/PerfilUsuarioActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/PerfilUsuarioActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Menu_deslizante.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Menu_deslizante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_carrinho.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_carrinho.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_desativar_conta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_desativar_conta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_nome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_nome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_senha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_senha.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_usuario_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_usuario_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_item_clicado.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_item_clicado.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_de_anuncios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_de_anuncios.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_usuario.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_anuncios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_anuncios.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_anuncios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_anuncios.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,108 +74,111 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity_menu_deslizante.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu_deslizante.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-            </state>
-          </provider>
+      <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
           <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app_bar_menu_deslizante.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_menu_deslizante.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="102">
+              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_menu_editar_anuncio.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu_editar_anuncio.xml">
           <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
+          <provider editor-type-id="text-editor">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content_menu_deslizante.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_menu_deslizante.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-            </state>
-          </provider>
+      <file leaf-file-name="activity_editar_usuario_menu.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_usuario_menu.xml">
           <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav_header_menu_deslizante.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_menu_deslizante.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_item_clicado.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_item_clicado.xml">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_editar_senha.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_senha.xml">
           <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemClicadoActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/ItemClicadoActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="66" column="57" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="1377">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnunciosAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnunciosAdapter.java">
+      <file leaf-file-name="activity_editar_nome.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_nome.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu_deslizante.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Menu_deslizante.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="39" selection-start-line="39" selection-end-line="40" selection-end-column="70" />
+            <state relative-caret-position="119">
+              <caret line="202" selection-start-line="202" selection-end-line="222" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditarAnuncioMenuActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/EditarAnuncioMenuActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListaDeAnunciosActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/ListaDeAnunciosActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_item_clicado.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_item_clicado.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_lista_de_anuncios.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lista_de_anuncios.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -2432,63 +2461,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarUsuarioActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/TelaDeAnunciosActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_blank.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/TelaDeAnunciosActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/AnunciosAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/ItemClicadoActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_menu_deslizante_drawer.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/menu_deslizante.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/MenuActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Anuncio.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarDesativarContaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarNomeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/PerfilUsuarioActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuarioMenuActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarAnunciosActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Menu_deslizante.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_deslizante.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_menu_deslizante.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_menu_deslizante.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_de_anuncios.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_deslizante.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnunciosAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_anuncios.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/CarrinhoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_carinho_compras_black_24dp.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_add_carrinho.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_add_black_24dp.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/button_desing.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_usuario.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_anuncios.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_de_anuncios.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_usuario_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_senha.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_nome.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_desativar_conta.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_carrinho.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/app_bar_menu_deslizante.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/ItemClicadoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_anuncios.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_anuncios.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_item_clicado.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/PerfilUsuarioActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_carrinho.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarUsuarioMenuActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_de_anuncios.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Menu_deslizante.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/MenuEditarAnunico.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_editar_anunico.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_anuncio_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_usuario_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/editarAnuncioActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/EditarAnuncioActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/MenuEditarAnuncio.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/ListaDeAnunciosActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/EditarAnuncioMenuActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_editar_anuncio.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_desativar_conta.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_senha.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_nome.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+    <option name="x" value="1041" />
+    <option name="width" value="886" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -2496,7 +2525,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="AndroidView">
@@ -2529,6 +2557,14 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="multiplestables" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Activitys" type="462c0819:PsiDirectoryNode" />
+              <item name="EditarAnuncio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilangoMarket" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="multiplestables" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="DATA" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2542,16 +2578,11 @@
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
-            <path>
-              <item name="BilangoMarket" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2729,8 +2760,8 @@
       <window_info id="Captures" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49733475" visible="true" weight="0.332244" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23400854" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49733475" weight="0.332244" />
       <window_info anchor="right" id="Gradle" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
@@ -2753,160 +2784,70 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>61</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>62</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>63</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>65</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>64</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>66</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>67</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>69</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>71</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>72</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>70</line>
           <properties />
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/LoginActivity.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/LoginActivity.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/LoginActivity.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/LoginActivity.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java</url>
-          <line>179</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java</url>
-          <line>180</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java</url>
-          <line>182</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java</url>
-          <line>183</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java</url>
-          <line>181</line>
-          <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java</url>
-          <line>184</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarUsuarioActivity.java</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarUsuarioActivity.java</url>
-          <line>81</line>
-          <properties />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarUsuarioActivity.java</url>
-          <line>82</line>
-          <properties />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarUsuarioActivity.java</url>
-          <line>84</line>
-          <properties />
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarUsuarioActivity.java</url>
-          <line>83</line>
-          <properties />
-          <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarUsuarioActivity.java</url>
@@ -3089,109 +3030,187 @@
           <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuarioMenuActivity.java</url>
-          <line>34</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarUsuarioMenuActivity.java</url>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="229" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuarioMenuActivity.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarUsuarioMenuActivity.java</url>
+          <line>36</line>
           <properties />
           <option name="timeStamp" value="230" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuarioMenuActivity.java</url>
-          <line>35</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarUsuarioMenuActivity.java</url>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="231" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuarioMenuActivity.java</url>
-          <line>36</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarUsuarioMenuActivity.java</url>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="232" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuarioMenuActivity.java</url>
-          <line>37</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarUsuarioMenuActivity.java</url>
+          <line>40</line>
           <properties />
           <option name="timeStamp" value="233" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/PerfilUsuarioActivity.java</url>
-          <line>39</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/PerfilUsuarioActivity.java</url>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/PerfilUsuarioActivity.java</url>
-          <line>40</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/PerfilUsuarioActivity.java</url>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
-          <line>66</line>
+          <line>181</line>
           <properties />
-          <option name="timeStamp" value="281" />
+          <option name="timeStamp" value="336" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
-          <line>65</line>
+          <line>182</line>
           <properties />
-          <option name="timeStamp" value="282" />
+          <option name="timeStamp" value="337" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
-          <line>64</line>
+          <line>183</line>
           <properties />
-          <option name="timeStamp" value="283" />
+          <option name="timeStamp" value="338" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
-          <line>63</line>
+          <line>184</line>
           <properties />
-          <option name="timeStamp" value="284" />
+          <option name="timeStamp" value="339" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
-          <line>62</line>
+          <line>185</line>
           <properties />
-          <option name="timeStamp" value="285" />
+          <option name="timeStamp" value="340" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
-          <line>60</line>
+          <line>197</line>
           <properties />
-          <option name="timeStamp" value="286" />
+          <option name="timeStamp" value="341" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
-          <line>61</line>
+          <line>198</line>
           <properties />
-          <option name="timeStamp" value="287" />
+          <option name="timeStamp" value="342" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
-          <line>57</line>
+          <line>199</line>
           <properties />
-          <option name="timeStamp" value="288" />
+          <option name="timeStamp" value="343" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
-          <line>55</line>
+          <line>200</line>
           <properties />
-          <option name="timeStamp" value="289" />
+          <option name="timeStamp" value="344" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
-          <line>54</line>
+          <line>203</line>
           <properties />
-          <option name="timeStamp" value="290" />
+          <option name="timeStamp" value="345" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>204</line>
+          <properties />
+          <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>165</line>
+          <properties />
+          <option name="timeStamp" value="349" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>167</line>
+          <properties />
+          <option name="timeStamp" value="350" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="351" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>168</line>
+          <properties />
+          <option name="timeStamp" value="352" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>169</line>
+          <properties />
+          <option name="timeStamp" value="353" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="355" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>174</line>
+          <properties />
+          <option name="timeStamp" value="356" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>187</line>
+          <properties />
+          <option name="timeStamp" value="357" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>188</line>
+          <properties />
+          <option name="timeStamp" value="358" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>195</line>
+          <properties />
+          <option name="timeStamp" value="359" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java</url>
+          <line>201</line>
+          <properties />
+          <option name="timeStamp" value="360" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java</url>
           <line>68</line>
           <properties method="onClick">
             <option name="EMULATED" value="true" />
@@ -3199,45 +3218,14 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="291" />
+      <option name="time" value="361" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/product_icon.png" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/DBHelper.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarUsuarioActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Anuncio.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/MainActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/LoginActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/ListaDeAnunciosActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarNomeActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarDesativarContaActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/PerfilUsuarioActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuarioMenuActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarAnunciosActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/TelaDeAnunciosActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Usuario.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarSenhaActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -3264,24 +3252,6 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Menu_deslizante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="166" column="30" selection-start-line="166" selection-start-column="30" selection-end-line="166" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/CarrinhoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
-          <folding>
-            <element signature="e#4296#4297#0" expanded="true" />
-            <element signature="e#4320#4321#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_carinho_compras_black_24dp.xml">
@@ -3313,120 +3283,114 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnunciosAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="39" selection-start-line="39" selection-end-line="40" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/CarrinhoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
+          <folding>
+            <element signature="e#4296#4297#0" expanded="true" />
+            <element signature="e#4320#4321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarNomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarSenhaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarUsuarioMenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/PerfilUsuarioActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarUsuario/EditarDesativarContaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_anuncio_menu.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_menu_deslizante.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_anuncios.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_usuario.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="25" selection-start-line="25" selection-end-line="44" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_anuncios.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lista_de_anuncios.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_usuario_menu.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_senha.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_nome.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_desativar_conta.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_carrinho.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tela_de_anuncios.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
@@ -3453,26 +3417,122 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_menu_deslizante.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/ItemClicadoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="71" selection-start-line="53" selection-start-column="8" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/EditarAnuncioActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/MenuEditarAnuncio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_anuncio.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarUsuarioActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="method#onCreate#0;class#RegistrarUsuarioActivity#0" />
+            <element signature="method#isEmailCadastrado#0;class#RegistrarUsuarioActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/RegistrarAnunciosActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="85" column="56" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnuncioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="200" selection-start-line="200" selection-end-line="200" />
+          <folding>
+            <element signature="method#AnuncioDAO#0;class#AnuncioDAO#0" />
+            <element signature="method#open#0;class#AnuncioDAO#0" />
+            <element signature="method#inserirAnuncio#0;class#AnuncioDAO#0" />
+            <element signature="method#deleteAnuncio#0;class#AnuncioDAO#0" />
+            <element signature="method#getAllAnuncios#0;class#AnuncioDAO#0" />
+            <element signature="method#getAllAnunciosList#0;class#AnuncioDAO#0" />
+            <element signature="method#getAnuncioByID#0;class#AnuncioDAO#0" />
+            <element signature="method#criarAnuncio#0;class#AnuncioDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/UsuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="163" column="15" selection-start-line="163" selection-start-column="15" selection-end-line="163" selection-end-column="15" />
+          <folding>
+            <element signature="method#inserirUsuario#0;class#UsuarioDAO#0" />
+            <element signature="method#getUsuarioByEmail#0;class#UsuarioDAO#0" />
+            <element signature="method#getUsuarioByID#0;class#UsuarioDAO#0" />
+            <element signature="method#criarUsuario#0;class#UsuarioDAO#0" />
+            <element signature="method#getAllUsuarios#0;class#UsuarioDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tela_de_anuncios.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_usuario.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="44" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_anuncios.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_usuario.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu_deslizante.xml">
@@ -3485,24 +3545,50 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/DATA/AnunciosAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="39" selection-start-line="39" selection-end-line="40" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/ItemClicadoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="66" column="57" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_carrinho.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_desativar_conta.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_senha.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_usuario_menu.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
@@ -3517,6 +3603,65 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lista_de_anuncios.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu_editar_anuncio.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editar_nome.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Menu_deslizante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="202" selection-start-line="202" selection-end-line="222" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/EditarAnuncioMenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mateus/multiplestables/Activitys/EditarAnuncio/ListaDeAnunciosActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        </state>
       </provider>
     </entry>
   </component>

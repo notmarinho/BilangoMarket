@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Activitys.EditarUsuarioMenuActivity">
+    tools:context=".Activitys.EditarUsuario.EditarUsuarioMenuActivity">
 
     <TextView
         android:id="@+id/txt_nav_usuarioEmail"
@@ -66,8 +66,10 @@
 
     <Button
         android:id="@+id/btn_voltarEditar"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_desing"
         android:onClick="act_menuPrincipal"

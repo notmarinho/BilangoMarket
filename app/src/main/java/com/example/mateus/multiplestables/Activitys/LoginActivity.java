@@ -63,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                                     it.putExtras(b);
                                     it.putExtra("usuario_email", login_email);
                                     startActivity(it);
+                                    overridePendingTransition(android.R.anim.linear_interpolator, android.R.anim.fade_out);
                                     MainActivity.mainActivity.finish(); // Fechando a activity Principal
                                     finish(); //Fechando a acitiviy atual
                                 }else
@@ -86,6 +87,7 @@ public class LoginActivity extends AppCompatActivity {
                 it.putExtras(b);
                 it.putExtra("usuario_email", login_email);
                 startActivity(it);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 MainActivity.mainActivity.finish();                                 // Fechando a activity Principal
                 finish();                                                           // Fechando a acitiviy atual
 

@@ -159,4 +159,52 @@ public class AnuncioDAO {
 
         return anuncio;
     }
+
+    public boolean editarNome(int ID, String novoNome){
+        open();
+        try {
+            String where = DBHelper.COLUNA_ANUNCIO_ID + " = '" + ID + "'";
+            ContentValues cv = new ContentValues();
+            cv.put(DBHelper.COLUNA_ANUNCIO_NOME, novoNome);
+            mDatabase.update(DBHelper.TABELA_ANUNCIO, cv, where, null);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }finally {
+            close();
+        }
+    }
+
+    public boolean editarPreco(int ID, float novoPreco){
+        open();
+        try {
+            String where = DBHelper.COLUNA_ANUNCIO_ID + " = '" + ID + "'";
+            ContentValues cv = new ContentValues();
+            cv.put(DBHelper.COLUNA_ANUNCIO_PRECO, novoPreco);
+            mDatabase.update(DBHelper.TABELA_ANUNCIO, cv, where, null);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }finally {
+            close();
+        }
+    }
+
+    public boolean editarDescricao(int ID, String novaDescricao){
+        open();
+        try {
+            String where = DBHelper.COLUNA_ANUNCIO_ID + " = '" + ID + "'";
+            ContentValues cv = new ContentValues();
+            cv.put(DBHelper.COLUNA_ANUNCIO_DESCRICAO, novaDescricao);
+            mDatabase.update(DBHelper.TABELA_ANUNCIO, cv, where, null);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }finally {
+            close();
+        }
+    }
 }

@@ -1,7 +1,6 @@
 package com.example.mateus.multiplestables;
 
 import android.app.Activity;
-import android.content.ClipData;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,16 +22,15 @@ import android.widget.TextView;
 
 import com.example.mateus.multiplestables.Activitys.CarrinhoActivity;
 import com.example.mateus.multiplestables.Activitys.ItemClicadoActivity;
-import com.example.mateus.multiplestables.Activitys.ListaDeAnunciosActivity;
+import com.example.mateus.multiplestables.Activitys.EditarAnuncio.ListaDeAnunciosActivity;
 import com.example.mateus.multiplestables.Activitys.MainActivity;
-import com.example.mateus.multiplestables.Activitys.PerfilUsuarioActivity;
+import com.example.mateus.multiplestables.Activitys.EditarUsuario.PerfilUsuarioActivity;
 import com.example.mateus.multiplestables.Activitys.RegistrarAnunciosActivity;
 import com.example.mateus.multiplestables.DATA.AnuncioDAO;
 import com.example.mateus.multiplestables.DATA.AnunciosAdapter;
 import com.example.mateus.multiplestables.DATA.UsuarioDAO;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Menu_deslizante extends AppCompatActivity
 
@@ -194,8 +192,11 @@ public class Menu_deslizante extends AppCompatActivity
             startActivity(it);
 
         } else if (id == R.id.nav_usuarioAnuncios) {
+            Bundle b = new Bundle();
+            b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
             Intent it = new Intent(this, ListaDeAnunciosActivity.class);
             it.putExtra("usuario_email", usuario_email);
+            it.putExtras(b);
             startActivity(it);
 
         } else if (id == R.id.nav_deslogar) {
