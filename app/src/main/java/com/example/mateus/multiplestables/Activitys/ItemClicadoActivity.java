@@ -72,8 +72,10 @@ public class ItemClicadoActivity extends AppCompatActivity {
 
             //Mudando os textos para as informaçoes do anuncio que foi clicado
 
+            DecimalFormat df = new DecimalFormat("0.00");
+            String preco  = df.format(Float.parseFloat(anuncio_preco));
             txt_anuncio_nome.setText(anuncio_nome);
-            txt_anuncio_preco.setText(anuncio_preco+"0");
+            txt_anuncio_preco.setText(preco);
             txt_anuncio_descricao.setText(anuncio_descricao);
             txt_anunciante.setText(anunciante_nome);
 

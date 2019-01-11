@@ -6,9 +6,11 @@ import android.os.Parcelable;
 public class Anuncio{
     private int ID;
     private int donoID;
+    private int comprador;
     private String nome;
     private float preço;
     private String descricao;
+
 
     public int getID() {
         return ID;
@@ -53,5 +55,14 @@ public class Anuncio{
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public int getComprador() {
+        return comprador;
+    }
+
+    public void setComprador(int comprador) {
+        this.comprador = comprador;
+    }
+
 }
 

@@ -81,7 +81,6 @@ public class LoginActivity extends AppCompatActivity {
             }
             else if (usuario.getSenha().equals(login_senha)){
                 Bundle b  = new Bundle();
-                System.out.println(idAnunciosCarrinho);
                 b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
                 Intent it = new Intent(getApplicationContext(), Menu_deslizante.class);
                 it.putExtras(b);

@@ -16,8 +16,10 @@ import android.widget.Toast;
 import com.example.mateus.multiplestables.Anuncio;
 import com.example.mateus.multiplestables.DATA.AnuncioDAO;
 import com.example.mateus.multiplestables.DATA.AnunciosAdapter;
+import com.example.mateus.multiplestables.DATA.UsuarioDAO;
 import com.example.mateus.multiplestables.Menu_deslizante;
 import com.example.mateus.multiplestables.R;
+import com.example.mateus.multiplestables.Usuario;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -30,6 +32,7 @@ public class CarrinhoActivity extends AppCompatActivity {
     ArrayList<Integer> idAnunciosCarrinho;
     ArrayList<Anuncio> anunciosCarrinho = new ArrayList<>();
     float preco = 0;
+    Usuario comprador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,8 @@ public class CarrinhoActivity extends AppCompatActivity {
                 anunciosCarrinho.add(anuncio);
                 preco += anuncio.getPreço();
             }
+            UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
+            comprador = usuarioDAO.getUsuarioByEmail(usuario_email);
             DecimalFormat df = new DecimalFormat("0.00");
             String total  = df.format(preco);
             txt_precoTotal.setText(total);
@@ -102,7 +107,20 @@ public class CarrinhoActivity extends AppCompatActivity {
     public void comprarTudo(View view){
         if (idAnunciosCarrinho.size() > 0) {
             AnuncioDAO anuncioDAO = new AnuncioDAO(getApplicationContext());
+            UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
             for (int i = 0; i < idAnunciosCarrinho.size(); i++) {
+                Anuncio anuncio    = anuncioDAO.getAnuncioByID(idAnunciosCarrinho.get(i));
+                Usuario vendedor   = usuarioDAO.getUsuarioByID(anuncio.getDonoID());
+
+                int anuncios_vendidos = vendedor.getAnuncios_vendidos() + 1;
+                float total_recebido  = vendedor.getTotal_recebido() + anuncio.getPreço();
+                usuarioDAO.declararAnuncioVendido(vendedor.getEmail(), anuncios_vendidos);
+                usuarioDAO.declararTotalRecebido(vendedor.getEmail(), total_recebido);
+
+                int anuncios_comprados = comprador.getAnuncios_comprados() + 1;
+                float total_gasto      = comprador.getTotal_gasto() + anuncio.getPreço();
+                usuarioDAO.declararAnuncioComprado(comprador.getEmail(), anuncios_comprados);
+                usuarioDAO.declararTotalGasto(comprador.getEmail(), total_gasto);
                 anuncioDAO.deleteAnuncio(idAnunciosCarrinho.get(i));
             }
             idAnunciosCarrinho.clear();
