@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.mateus.multiplestables.DATA.AnuncioDAO;
+import com.example.mateus.multiplestables.Menu_deslizante;
 import com.example.mateus.multiplestables.R;
 
 import java.util.ArrayList;

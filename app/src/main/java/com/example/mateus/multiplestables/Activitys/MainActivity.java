@@ -38,11 +38,13 @@ public class MainActivity extends AppCompatActivity {
                 String anuncio_preco     = lista.get(position).getPrecoString();
                 String anuncio_descricao = lista.get(position).getDescricao();
                 int    anuncio_ID        = lista.get(position).getID();
+                int    anunciante        = lista.get(position).getDonoID();
                 Intent it = new Intent(getApplicationContext(), ItemClicadoActivity.class);
                 it.putExtra("anuncio_nome", anuncio_nome);                            //Enviando os dados para a Activity que aparecera todos os dados do anuncio
                 it.putExtra("anuncio_preco", anuncio_preco);
                 it.putExtra("anuncio_descricao", anuncio_descricao);
                 it.putExtra("anuncio_ID", anuncio_ID);
+                it.putExtra("anunciante", anunciante);
                 startActivity(it);
             }
         });

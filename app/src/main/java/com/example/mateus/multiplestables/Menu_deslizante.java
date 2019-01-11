@@ -47,15 +47,15 @@ public class Menu_deslizante extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_deslizante);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         menu_deslizante = this;
 
-        NavigationView navigationView = (NavigationView)findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         View headerView = navigationView.getHeaderView(0);
-        txt_usuarioNome  = (TextView)headerView.findViewById(R.id.txt_nav_usuarioNome);
-        txt_usuarioEmail = (TextView)headerView.findViewById(R.id.txt_nav_usuarioEmail);
+        txt_usuarioNome  = headerView.findViewById(R.id.txt_nav_usuarioNome);
+        txt_usuarioEmail = headerView.findViewById(R.id.txt_nav_usuarioEmail);
 
         Bundle bundle = getIntent().getExtras();
 
@@ -102,15 +102,17 @@ public class Menu_deslizante extends AppCompatActivity
                 String anuncio_preco     = lista.get(position).getPrecoString();
                 String anuncio_descricao = lista.get(position).getDescricao();
                 int    anuncio_ID        = lista.get(position).getID();
+                int    anunciante        = lista.get(position).getDonoID();
                 Bundle b  = new Bundle();
                 b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
                 Intent it = new Intent(getApplicationContext(), ItemClicadoActivity.class);
                 it.putExtras(b);
-                it.putExtra("anuncio_nome", anuncio_nome);                            // Enviando os dados para a Activity que aparecera todos os dados do anuncio
-                it.putExtra("anuncio_preco", anuncio_preco);
+                it.putExtra("anuncio_nome",      anuncio_nome);                            // Enviando os dados para a Activity que aparecera todos os dados do anuncio
+                it.putExtra("anuncio_preco",     anuncio_preco);
                 it.putExtra("anuncio_descricao", anuncio_descricao);
-                it.putExtra("anuncio_ID", anuncio_ID);
-                it.putExtra("usuario_email", usuario_email);
+                it.putExtra("anuncio_ID",        anuncio_ID);
+                it.putExtra("usuario_email",     usuario_email);
+                it.putExtra("anunciante",        anunciante);
                 startActivity(it);
             }
         });

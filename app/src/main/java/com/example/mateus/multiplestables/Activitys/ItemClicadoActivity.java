@@ -12,24 +12,30 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.example.mateus.multiplestables.Anuncio;
+import com.example.mateus.multiplestables.DATA.UsuarioDAO;
 import com.example.mateus.multiplestables.Menu_deslizante;
 import com.example.mateus.multiplestables.R;
+import com.example.mateus.multiplestables.Usuario;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class ItemClicadoActivity extends AppCompatActivity {
 
+    String usuario_email;
     String anuncio_nome;
     String anuncio_preco;
     String anuncio_descricao;
-    int    anuncio_ID;
+    String anunciante_nome;
+    int anunciante_ID;
+    int anuncio_ID;
 
     TextView txt_anuncio_nome;
     TextView txt_anuncio_preco;
     TextView txt_anuncio_descricao;
+    TextView txt_anunciante;
 
-    String usuario_email;
+
 
     ArrayList<Integer> idAnunciosCarrinho;
 
@@ -41,11 +47,10 @@ public class ItemClicadoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_item_clicado);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        txt_anuncio_nome      = (TextView) findViewById (R.id.telaAnuncio_nome);
-        txt_anuncio_preco     = (TextView) findViewById (R.id.telaAnuncio_preco);
-        txt_anuncio_descricao = (TextView) findViewById (R.id.telaAnuncio_descricao);
-
-
+        txt_anuncio_nome      = findViewById (R.id.telaAnuncio_nome);
+        txt_anuncio_preco     = findViewById (R.id.telaAnuncio_preco);
+        txt_anuncio_descricao = findViewById (R.id.telaAnuncio_descricao);
+        txt_anunciante        = findViewById (R.id.txt_anunciante);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -58,14 +63,19 @@ public class ItemClicadoActivity extends AppCompatActivity {
             anuncio_preco     = bundle.getString("anuncio_preco");
             anuncio_descricao = bundle.getString("anuncio_descricao");
             anuncio_ID        = bundle.getInt   ("anuncio_ID");
+            anunciante_ID     = bundle.getInt   ("anunciante");
 
             idAnunciosCarrinho= bundle.getIntegerArrayList("carrinho");
+
+            UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
+            anunciante_nome = usuarioDAO.getUsuarioByID(anunciante_ID).getNome();
 
             //Mudando os textos para as informaçoes do anuncio que foi clicado
 
             txt_anuncio_nome.setText(anuncio_nome);
             txt_anuncio_preco.setText(anuncio_preco+"0");
             txt_anuncio_descricao.setText(anuncio_descricao);
+            txt_anunciante.setText(anunciante_nome);
 
             usuario_email = bundle.getString("usuario_email");
         }

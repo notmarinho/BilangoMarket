@@ -9,10 +9,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.mateus.multiplestables.Activitys.EditarUsuario.EditarUsuarioMenuActivity;
 import com.example.mateus.multiplestables.Anuncio;
 import com.example.mateus.multiplestables.DATA.AnuncioDAO;
 import com.example.mateus.multiplestables.DATA.AnunciosAdapter;
 import com.example.mateus.multiplestables.DATA.UsuarioDAO;
+import com.example.mateus.multiplestables.Menu_deslizante;
 import com.example.mateus.multiplestables.R;
 import com.example.mateus.multiplestables.Usuario;
 
@@ -38,7 +40,7 @@ public class ListaDeAnunciosActivity extends AppCompatActivity {
             idAnunciosCarrinho = bundle.getIntegerArrayList("carrinho");
         }
 
-        ArrayList<Anuncio> listaAnunciosUsuario = new ArrayList<>();
+        final ArrayList<Anuncio> listaAnunciosUsuario = new ArrayList<>();
         final AnuncioDAO anuncioDAO = new AnuncioDAO(getApplicationContext());
         ArrayList<Anuncio> listaAnuncios = anuncioDAO.getAllAnuncios();
         for (int i = 0; i < listaAnuncios.size(); i++){
@@ -52,7 +54,7 @@ public class ListaDeAnunciosActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ArrayList<Anuncio> lista = anuncioDAO.getAllAnuncios();
+                ArrayList<Anuncio> lista = listaAnunciosUsuario;
                 String anuncio_nome      = lista.get(position).getNome();
                 String anuncio_preco     = lista.get(position).getPrecoString();
                 String anuncio_descricao = lista.get(position).getDescricao();
@@ -61,7 +63,7 @@ public class ListaDeAnunciosActivity extends AppCompatActivity {
                 b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
                 Intent it = new Intent(getApplicationContext(), EditarAnuncioMenuActivity.class);
                 it.putExtras(b);
-                it.putExtra("anuncio_nome", anuncio_nome);                            // Enviando os dados para a Activity que aparecera todos os dados do anuncio
+                it.putExtra("anuncio_nome", anuncio_nome);                            // Enviando os dados para a Activity que aparecera os dados do anuncio
                 it.putExtra("anuncio_preco", anuncio_preco);
                 it.putExtra("anuncio_descricao", anuncio_descricao);
                 it.putExtra("anuncio_ID", anuncio_ID);
@@ -71,7 +73,14 @@ public class ListaDeAnunciosActivity extends AppCompatActivity {
         });
     }
 
-    public void fechar_act(View view){
+    @Override
+    public void onBackPressed(){
+        Bundle b = new Bundle();
+        b.putIntegerArrayList("carrinho", idAnunciosCarrinho);
+        Intent it = new Intent(this, Menu_deslizante.class);
+        it.putExtras(b);
+        it.putExtra("usuario_email", usuario_email);
+        startActivity(it);
         finish();
     }
 }
