@@ -15,21 +15,44 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorAccent"
+            android:background="@color/colorPrimaryDark"
 
             app:popupTheme="@style/PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_menu_deslizante" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_menu_deslizante" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <com.github.clans.fab.FloatingActionMenu
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_add_black_24dp"
-        app:backgroundTint="@color/colorPrimaryDark" />
+        android:background="@android:color/transparent"
+        android:elevation="10dp"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="right|bottom"
+        app:menu_fab_label=""
+        app:menu_colorNormal="@color/colorPrimaryDark"
+        app:menu_colorPressed="@color/colorAccent"
+        app:menu_fab_size="normal"
+        app:menu_openDirection="up"
+        app:menu_showShadow="true"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_laptop_black_24dp"
+            app:fab_colorNormal="@color/colorPrimaryDark"
+            app:menu_colorPressed="@color/colorAccent"
+            app:fab_label="Anuncio"
+            app:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
 
 </android.support.design.widget.CoordinatorLayout>

@@ -23,8 +23,6 @@ public class TelaDeAnunciosActivity extends AppCompatActivity {
         ArrayList<ArrayList> lista = new ArrayList();
         AnuncioDAO anuncioDAO = new AnuncioDAO(getApplicationContext());
         lista =  anuncioDAO.getAllAnunciosList();
-
-
     }
 
 

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toolbar;
 
 import com.example.mateus.multiplestables.Anuncio;
 import com.example.mateus.multiplestables.DATA.AnunciosAdapter;
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mainActivity = this;
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+
         ListView listView = (ListView)findViewById(R.id.listViewMain);
         final AnuncioDAO anuncioDAO = new AnuncioDAO(getApplicationContext());
         ArrayAdapter adapter = new AnunciosAdapter(this, anuncioDAO.getAllAnuncios());

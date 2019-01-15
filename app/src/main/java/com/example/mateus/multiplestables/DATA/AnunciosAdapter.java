@@ -22,7 +22,7 @@ public class AnunciosAdapter  extends ArrayAdapter<Anuncio> {
 
     public AnunciosAdapter(Context context, ArrayList<Anuncio> elementos){
         super(context, R.layout.layout_anuncios, elementos);
-        this.context = context;
+        this.context   = context;
         this.elementos = elementos;
     }
 
@@ -33,18 +33,14 @@ public class AnunciosAdapter  extends ArrayAdapter<Anuncio> {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.layout_anuncios, parent, false);
 
-        TextView nomeAnuncio = (TextView) rowView.findViewById(R.id.nomeAnuncio);
-        TextView precoAnuncio = (TextView) rowView.findViewById(R.id.precoAnuncio);
-        TextView descricaoAnuncio = (TextView) rowView.findViewById(R.id.descricaoAnuncio);
+        TextView nomeAnuncio  = rowView.findViewById(R.id.nomeAnuncio);
+        TextView precoAnuncio = rowView.findViewById(R.id.precoAnuncio);
 
         DecimalFormat df = new DecimalFormat("0.00");
-        String total  = df.format(elementos.get(position).getPreço());
+        String total     = df.format(elementos.get(position).getPreço());
+
         nomeAnuncio.setText(elementos.get(position).getNome());
         precoAnuncio.setText(total);
-        descricaoAnuncio.setText(elementos.get(position).getDescricao());
-
-
         return rowView;
     }
-
 }

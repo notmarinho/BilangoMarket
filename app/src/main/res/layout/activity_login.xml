@@ -70,7 +70,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
-        android:text="Olá! para continuar precioso que informe seu email e sua senha"
+        android:text="Olá! para continuar preciso que informe seu email e sua senha"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"

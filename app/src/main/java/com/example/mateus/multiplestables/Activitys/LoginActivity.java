@@ -28,8 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        edt_login_email = (EditText)findViewById(R.id.edt_login_email);
-        edt_login_senha = (EditText)findViewById(R.id.edt_login_senha);
+        edt_login_email = findViewById(R.id.edt_login_email);
+        edt_login_senha = findViewById(R.id.edt_login_senha);
     }
 
     public boolean ativarUsuario(){
@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
     public void logar(View view){
         final UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
         final String login_email = edt_login_email.getText().toString();
-        String login_senha = edt_login_senha.getText().toString();
+        String login_senha       = edt_login_senha.getText().toString();
 
         Usuario usuario = usuarioDAO.getUsuarioByEmail(login_email);
         if (usuario != null){
@@ -55,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
                         .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+
                                 if (ativarUsuario()){
                                     Toast.makeText(LoginActivity.this, "Usuario ativado novamente", Toast.LENGTH_SHORT).show();
                                     Bundle b  = new Bundle();
